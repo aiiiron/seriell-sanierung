@@ -98,8 +98,8 @@ automaatselt FTP kaudu serverisse** (GitHub Actions, `.github/workflows/deploy.y
 git add -A && git commit -m "Sisu: ..." && git push
 ```
 
-Juurutuse käiku näed GitHubis vahekaardil **Actions**. `.github/`, `*.md` ja
-`preview.py` serverisse ei lähe (vt `exclude` workflow-failis).
+Juurutuse käiku näed GitHubis vahekaardil **Actions**. `.github/` ja `*.md`
+serverisse ei lähe (vt `exclude` workflow-failis).
 
 > **Domeeniga GitHub Pages ei kasutata** — leht jookseb PHP peal Sinu enda
 > hostingus, GitHub teeb ainult FTP-üleslaadimise.
@@ -108,17 +108,20 @@ Juurutuse käiku näed GitHubis vahekaardil **Actions**. `.github/`, `*.md` ja
 
 ## Enne avalikuks tegemist — palun üle vaadata
 
-Otsi projektist sõna **`PLATZHALTER`** — kõik kohad on ka `inc/site.php`-s
-koos ✅/⚠️ märgetega.
+**Kõik firma- ja kontaktandmed** on ainult EstNor OÜ kohta ja koondatud
+`inc/site.php`-sse (nimi, aadress, registrikood 10706304, KMKR EE100650305,
+juhatuse liige Renee Mikomägi, e-post/telefon). Allikad: estnor.ee ja
+estnisese e-Äriregistri kanne. Kui midagi neist muutub, muuda ainult
+`inc/site.php`-d.
 
-- **`inc/site.php`** — registrikood, KMKR/USt-IdNr, juhatuse liige,
-  saksakeelne kontaktisik, kontaktivormi saaja-aadress.
-- **`impressum.php`** — kes on lehe **tegelik käitaja** (Diensteanbieter).
-  Kui lehte haldab Saksa äriühing, mitte Estnor OÜ, tuleb kõik andmed
-  vastavalt muuta. Impressum on koostatud §5 DDG standardstruktuuri järgi,
-  **ei ole õigusnõustamine** — lase juristil üle vaadata.
-- **`datenschutz.php`** — vastutav asutus, tegelik **hosting** (server­i
-  asukoht, AVL/Art. 28), Google Fonts vs. lokaalsed fondid, analüütika.
+Veel üle vaadata:
+
+- **`impressum.php`** — koostatud §5 DDG / §18 MStV standardstruktuuri järgi,
+  Diensteanbieter = EstNor OÜ. **Ei ole õigusnõustamine** — lase Saksa
+  TMG/DDG/DSGVO-d tundval juristil üle vaadata.
+- **`datenschutz.php`** — tegelik **hosting** (serveri asukoht, AVL/Art. 28),
+  logide säilitusaeg, andmekaitseametniku vajadus, Google Fonts vs. lokaalsed
+  fondid, analüütika. Vastutav asutus on juba EstNor OÜ.
 - **Google Fonts** — praegu laetakse fondid Google'i serverist
   (`partials/head.php`). Andmekaitse­sõbralikum on fondifailid ise serverisse
   panna ja väline link eemaldada.

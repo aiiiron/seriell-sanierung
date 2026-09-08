@@ -1,7 +1,7 @@
 <?php
 $slug = 'ueber-uns.php';
 $page_title = 'Über EstNor';
-$page_desc = 'Estnor OÜ fertigt seit dem Jahr 2000 vorgefertigte Holzhäuser und Fassadenelemente im Werk in Kiili, Estland – überwiegend für den Export nach Nord- und Mitteleuropa.';
+$page_desc = 'EstNor OÜ fertigt seit dem Jahr 2000 vorgefertigte Holzhäuser und Fassadenelemente im Werk in Kiili, Estland – überwiegend für den Export nach Nord- und Mitteleuropa.';
 require __DIR__ . '/partials/head.php';
 ?>
 
@@ -11,7 +11,7 @@ require __DIR__ . '/partials/head.php';
       <span class="eyebrow">Über EstNor</span>
       <h1>Werksfertigung mit 25 Jahren Erfahrung</h1>
       <p class="lead">
-        Estnor OÜ ist ein estnisches Unternehmen mit eigener Hausfabrik in Kiili bei
+        EstNor OÜ ist ein estnisches Unternehmen mit eigener Hausfabrik in Kiili bei
         Tallinn. Seit dem Jahr 2000 fertigt EstNor vorgefertigte Holzhäuser sowie
         Fassaden- und Dachelemente für Neubau und Sanierung.
       </p>

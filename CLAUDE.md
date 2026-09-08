@@ -54,11 +54,22 @@ Push to `main` → `.github/workflows/deploy.yml` FTP-uploads to the host
 No GitHub Pages — the site runs on PHP hosting (separate Hostinger account
 from Ajaraamat). `.github/**` and `*.md` are not uploaded.
 
+## Company / contact identity
+
+All company and contact info is **EstNor OÜ** only, centralised in
+`inc/site.php` (name, address `Kurna tee 33, 75401 Kiili`, Registrikood
+`10706304`, VAT `EE100650305`, board member `Renee Mikomägi`, `info@estnor.ee`,
+`+372 651 6174`). Sources: estnor.ee + Estonian e-Äriregister. No German GmbH,
+no separate "German contact person" — don't reintroduce one. If a fact
+changes, edit only `inc/site.php`.
+
 ## Before go-live
 
-Search the repo for `PLATZHALTER`. Key items: Impressum operating entity
-(is it Estnor OÜ or a German GmbH?), register/VAT numbers, managing director,
-German contact person, real hosting details in `datenschutz.php`, German-market
-building-approval evidence for the elements, real project photos.
-Impressum/Datenschutz are drafted to standard structure but are **not legal
-advice** — have them reviewed.
+- `impressum.php` / `datenschutz.php` — drafted to §5 DDG / §18 MStV / DSGVO
+  structure, Diensteanbieter/verantwortliche Stelle = EstNor OÜ. **Not legal
+  advice** — have a lawyer review.
+- `datenschutz.php` still needs: real hosting details (server location,
+  Art. 28 AVV), log-retention period, DPO assessment, Google Fonts vs.
+  self-hosted.
+- German building-approval evidence for the elements (abZ/aBG, Brandschutz).
+- Real project photos for `inc/projects.php` (currently schematic SVGs).

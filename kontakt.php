@@ -87,15 +87,15 @@ require __DIR__ . '/partials/head.php';
           <dd><a href="tel:<?= e($SITE['contact']['phone_href']) ?>"><?= e($SITE['contact']['phone']) ?></a></dd>
         </div>
         <div>
-          <dt>Hersteller</dt>
-          <dd><?= e($SITE['company']['legal_name']) ?>, <?= e($SITE['company']['street']) ?>,
-              <?= e($SITE['company']['zip_city']) ?>, <?= e($SITE['company']['region']) ?></dd>
+          <dt>Anschrift</dt>
+          <dd><?= e($SITE['company']['legal_name']) ?><br>
+              <?= e($SITE['company']['street']) ?>, <?= e($SITE['company']['zip_city']) ?><br>
+              <?= e($SITE['company']['region']) ?></dd>
         </div>
       </dl>
 
-      <div class="callout">
-        <b>Platzhalter:</b> <?= e($SITE['contact']['de_note']) ?>
-      </div>
+      <p>Anfragen aus Deutschland beantwortet EstNor auf Deutsch. Gern vereinbaren wir
+        einen Termin oder einen Rückruf.</p>
     </div>
 
     <div class="card">

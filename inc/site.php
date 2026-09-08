@@ -2,9 +2,9 @@
 /**
  * inc/site.php — zentrale Fakten + kleine Helfer für alle Seiten.
  *
- * Werte mit  ✅  stammen von EstNors eigener Website (estnor.ee, Stand 09/2026).
- * Werte mit  ⚠️  sind Platzhalter und müssen vor dem Livegang geprüft/ergänzt
- * werden — im Projekt einfach nach "PLATZHALTER" suchen.
+ * Alle Firmen- und Kontaktangaben betreffen ausschließlich die EstNor OÜ.
+ * Quellen: estnor.ee (Impressum/Kontakt) und estnisches e-Äriregister
+ * (ariregister.rik.ee, Registrikood 10706304), Stand 09/2026.
  *
  * Kein Framework, kein Build-Schritt: Diese Datei wird per require in jede
  * Seite eingebunden (siehe partials/head.php).
@@ -15,35 +15,35 @@ $SITE = [
     'url'      => 'https://seriell-sanierung.de',
     'tagline'  => 'Vorgefertigte Fassadenelemente für die serielle Sanierung',
 
-    // ── Hersteller ────────────────────────────────────────────────────────
+    // ── Hersteller / Betreiber: EstNor OÜ ────────────────────────────────
     'company' => [
-        'legal_name' => 'Estnor OÜ',                 // ✅
-        'founded'    => 2000,                         // ✅
-        'street'     => 'Kurna tee 33',              // ✅
-        'zip_city'   => '75401 Kiili alevik',        // ✅
-        'region'     => 'Harjumaa, Estland',         // ✅
-        'reg_code'   => '[PLATZHALTER: Registrikood / Handelsregister-Nr.]',   // ⚠️
-        'vat_id'     => '[PLATZHALTER: KMKR / USt-IdNr.]',                     // ⚠️
-        'ceo'        => '[PLATZHALTER: Geschäftsführer:in]',                   // ⚠️
+        'legal_name'   => 'EstNor OÜ',
+        'register_name' => 'OÜ EstNor',   // eingetragene Firmierung im e-Äriregister
+        'founded'      => 2000,
+        'street'       => 'Kurna tee 33',
+        'zip_city'     => '75401 Kiili',
+        'region'       => 'Harju maakond, Estland',
+        'reg_code'     => '10706304',        // Registrikood (e-Äriregister)
+        'vat_id'       => 'EE100650305',     // KMKR nr. / USt-IdNr.
+        'ceo'          => 'Renee Mikomägi',  // Juhatuse liige / Geschäftsführer
     ],
 
-    // ── Kontakt ──────────────────────────────────────────────────────────
+    // ── Kontakt: EstNor OÜ ──────────────────────────────────────────────
     'contact' => [
-        'email'      => 'info@estnor.ee',            // ✅
-        'phone'      => '+372 651 6174',             // ✅
-        'phone_href' => '+3726516174',               // ✅
-        // Eigene deutschsprachige Ansprechperson / Adresse, falls vorhanden:
-        'de_note'    => '[PLATZHALTER: dt. Ansprechpartner:in / ggf. eigene E-Mail + Telefon]', // ⚠️
-        // Empfängeradresse des Kontaktformulars (Standard: E-Mail oben):
-        'form_to'    => 'info@estnor.ee',            // ⚠️ ggf. auf Vertriebsadresse ändern
+        'email'      => 'info@estnor.ee',
+        'phone'      => '+372 651 6174',
+        'phone_href' => '+3726516174',
+        'fax'        => '+372 651 6074',
+        // Empfängeradresse des Kontaktformulars:
+        'form_to'    => 'info@estnor.ee',
     ],
 
     'social' => [
-        'linkedin' => 'https://ee.linkedin.com/company/estnor',  // ✅
-        'facebook' => 'https://www.facebook.com/estnor/',        // ✅
+        'linkedin' => 'https://ee.linkedin.com/company/estnor',
+        'facebook' => 'https://www.facebook.com/estnor/',
     ],
 
-    // ── Kennzahlen (alle ✅ von estnor.ee) ────────────────────────────────
+    // ── Kennzahlen (EstNor OÜ, Quelle estnor.ee) ─────────────────────────
     'stats' => [
         ['25 Jahre', 'Erfahrung im vorgefertigten Holzelementbau'],
         ['1.000+',   'gebaute Wohneinheiten'],

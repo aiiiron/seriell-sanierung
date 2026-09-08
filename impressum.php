@@ -11,39 +11,45 @@ require __DIR__ . '/partials/head.php';
     <h1>Impressum</h1>
 
     <div class="callout">
-      <b>Bitte vor Livegang prüfen.</b> Dieser Entwurf folgt der üblichen Struktur nach
-      § 5 DDG (Digitale-Dienste-Gesetz) und ist <b>keine Rechtsberatung</b>. Die
-      Angaben zum Diensteanbieter müssen von der betreibenden Gesellschaft bestätigt
-      und die Platzhalter <code>[…]</code> ersetzt werden – insbesondere, falls
-      seriell-sanierung.de nicht von der Estnor OÜ selbst, sondern von einer
-      deutschen Gesellschaft betrieben wird.
+      <b>Bitte vor Livegang juristisch prüfen lassen.</b> Dieser Text folgt der
+      üblichen Struktur nach § 5 DDG (Digitale-Dienste-Gesetz) und § 18 MStV und ist
+      <b>keine Rechtsberatung</b>. Betreiber und Diensteanbieter dieser Website ist
+      die EstNor OÜ; die nachstehenden Angaben stammen aus dem estnischen
+      e-Äriregister und von estnor.ee.
     </div>
 
     <h2>Diensteanbieter</h2>
     <p>
-      <?= e($SITE['company']['legal_name']) ?><br>
+      <?= e($SITE['company']['legal_name']) ?>
+      (im Handelsregister: <?= e($SITE['company']['register_name']) ?>)<br>
       <?= e($SITE['company']['street']) ?><br>
       <?= e($SITE['company']['zip_city']) ?><br>
       <?= e($SITE['company']['region']) ?>
     </p>
 
     <h2>Vertretungsberechtigte Person</h2>
-    <p><?= e($SITE['company']['ceo']) ?></p>
+    <p><?= e($SITE['company']['ceo']) ?>, Juhatuse liige (Geschäftsführer)</p>
 
     <h2>Kontakt</h2>
     <p>
       Telefon: <?= e($SITE['contact']['phone']) ?><br>
+      Telefax: <?= e($SITE['contact']['fax']) ?><br>
       E-Mail: <a href="mailto:<?= e($SITE['contact']['email']) ?>"><?= e($SITE['contact']['email']) ?></a>
     </p>
 
     <h2>Registereintrag</h2>
     <p>
-      Handelsregister / Äriregister: <?= e($SITE['company']['reg_code']) ?><br>
-      Umsatzsteuer-Identifikationsnummer: <?= e($SITE['company']['vat_id']) ?>
+      Eingetragen im estnischen Handelsregister (e-Äriregister), geführt vom
+      Tartu Maakohus (Registrikeskus).<br>
+      Registrikood (Registernummer): <?= e($SITE['company']['reg_code']) ?><br>
+      Umsatzsteuer-Identifikationsnummer (KMKR nr.): <?= e($SITE['company']['vat_id']) ?>
     </p>
 
-    <h2>Verantwortlich für den Inhalt</h2>
-    <p>[Name und Anschrift der inhaltlich verantwortlichen Person, sofern abweichend]</p>
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>
+      <?= e($SITE['company']['ceo']) ?>, <?= e($SITE['company']['legal_name']) ?>,
+      Anschrift wie oben.
+    </p>
 
     <h2>EU-Streitschlichtung</h2>
     <p>

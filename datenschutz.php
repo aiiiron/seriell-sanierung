@@ -14,21 +14,25 @@ require __DIR__ . '/partials/head.php';
       <b>Bitte vor Livegang prüfen und anpassen.</b> Dieser Entwurf beschreibt die
       Standard-Datenverarbeitung einer Informations-Website mit Kontaktformular. Er ist
       <b>keine Rechtsberatung</b>. Vor Veröffentlichung sind mindestens zu prüfen:
-      verantwortliche Stelle, tatsächlich eingesetztes Hosting (Server-Standort,
-      Auftragsverarbeitungsvertrag), Schriftauslieferung (siehe Abschnitt „Schriftarten“),
-      sowie ob weitere Dienste (Analyse, Karten, Video) eingebunden werden.
+      tatsächlich eingesetztes Hosting (Server-Standort, Auftragsverarbeitungsvertrag),
+      Schriftauslieferung (siehe Abschnitt „Schriftarten“) sowie ob weitere Dienste
+      (Analyse, Karten, Video) eingebunden werden.
     </div>
 
     <h2>1. Verantwortliche Stelle</h2>
     <p>
-      <?= e($SITE['company']['legal_name']) ?><br>
+      Verantwortlich im Sinne der DSGVO ist:<br>
+      <?= e($SITE['company']['legal_name']) ?>
+      (im Handelsregister: <?= e($SITE['company']['register_name']) ?>)<br>
       <?= e($SITE['company']['street']) ?>, <?= e($SITE['company']['zip_city']) ?>,
       <?= e($SITE['company']['region']) ?><br>
+      Vertreten durch: <?= e($SITE['company']['ceo']) ?> (Juhatuse liige / Geschäftsführer)<br>
       E-Mail: <a href="mailto:<?= e($SITE['contact']['email']) ?>"><?= e($SITE['contact']['email']) ?></a><br>
       Telefon: <?= e($SITE['contact']['phone']) ?>
     </p>
-    <p>[Falls eine deutsche Betreibergesellschaft verantwortlich ist, hier deren
-      vollständige Angaben einsetzen. Ggf. Datenschutzbeauftragte:r ergänzen.]</p>
+    <p>Eine gesetzliche Pflicht zur Benennung einer/eines Datenschutzbeauftragten
+      besteht für EstNor OÜ nach derzeitiger Einschätzung nicht. [Vor Livegang
+      bestätigen; ggf. Kontaktdaten ergänzen.]</p>
 
     <h2>2. Verarbeitung beim Besuch der Website (Server-Logs)</h2>
     <p>Beim Aufruf der Website werden durch den Hosting-Provider automatisch

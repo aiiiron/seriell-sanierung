@@ -123,7 +123,7 @@ require __DIR__ . '/partials/head.php';
     <div class="section-head">
       <span class="eyebrow">Hersteller</span>
       <h2>EstNor in Zahlen</h2>
-      <p class="lead">Estnor OÜ baut seit dem Jahr 2000 vorgefertigte Holzhäuser und
+      <p class="lead">EstNor OÜ baut seit dem Jahr 2000 vorgefertigte Holzhäuser und
         Elemente – überwiegend für den Export nach Nord- und Mitteleuropa.</p>
     </div>
     <div class="stat-row">
