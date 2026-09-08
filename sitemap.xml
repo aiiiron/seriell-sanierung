@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Statische Sitemap. Bei neuen Seiten hier einen <url>-Block ergänzen. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://seriell-sanierung.de/</loc><priority>1.0</priority></url>
+  <url><loc>https://seriell-sanierung.de/serielle-sanierung.php</loc><priority>0.8</priority></url>
+  <url><loc>https://seriell-sanierung.de/fassadenelemente.php</loc><priority>0.8</priority></url>
+  <url><loc>https://seriell-sanierung.de/ueber-uns.php</loc><priority>0.6</priority></url>
+  <url><loc>https://seriell-sanierung.de/referenzen.php</loc><priority>0.6</priority></url>
+  <url><loc>https://seriell-sanierung.de/kontakt.php</loc><priority>0.7</priority></url>
+  <url><loc>https://seriell-sanierung.de/impressum.php</loc><priority>0.2</priority></url>
+  <url><loc>https://seriell-sanierung.de/datenschutz.php</loc><priority>0.2</priority></url>
+</urlset>

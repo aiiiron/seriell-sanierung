@@ -1,0 +1,7 @@
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# logs / local junk
+*.log

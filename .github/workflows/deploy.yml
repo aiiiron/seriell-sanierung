@@ -1,0 +1,37 @@
+name: Deploy via FTP
+
+# Wie bei Ajaraamat: Push auf main -> Dateien werden per FTP auf das
+# Hosting hochgeladen. Kein Build-Schritt, PHP wird vom Server ausgeführt.
+#
+# Benötigte Repository-Secrets (Settings -> Secrets and variables -> Actions):
+#   FTP_SERVER       z. B. ftp.seriell-sanierung.de  (oder Server-IP/Host von Hostinger)
+#   FTP_USERNAME     FTP-Benutzername dieses Hosting-Accounts
+#   FTP_PASSWORD     FTP-Passwort
+#   FTP_SERVER_DIR   Zielverzeichnis auf dem Server, mit Slash am Ende,
+#                    z. B. /public_html/  (oder /domains/seriell-sanierung.de/public_html/)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: FTP-Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          # Diese Pfade landen nicht auf dem Server:
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            **/*.md
