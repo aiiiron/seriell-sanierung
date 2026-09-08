@@ -52,8 +52,8 @@ $SITE = [
     ],
 
     // ── Navigation (Reihenfolge; Beschriftungen in lang/*.php unter 'nav') ─
+    // "Start" ist bewusst nicht enthalten – das Logo verlinkt auf die Startseite.
     'nav' => [
-        'index.php',
         'serielle-sanierung.php',
         'fassadenelemente.php',
         'ueber-uns.php',

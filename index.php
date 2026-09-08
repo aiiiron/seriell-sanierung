@@ -6,22 +6,24 @@ $page_desc  = t('meta.home.desc');
 require __DIR__ . '/partials/head.php';
 ?>
 
-<section class="hero wrap">
-  <div class="hero-grid">
-    <div>
-      <span class="eyebrow"><?= t('home.hero_eyebrow') ?></span>
-      <h1><?= t('home.hero_title') ?></h1>
-      <p class="lead"><?= t('home.hero_lead') ?></p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="/kontakt.php"><?= t('common.cta_project') ?></a>
-        <a class="btn btn-ghost" href="/serielle-sanierung.php"><?= t('home.hero_cta2') ?></a>
-      </div>
-      <div class="badge-row">
-        <?php foreach (ta('home.hero_badges') as $b): ?><span><?= $b ?></span><?php endforeach; ?>
-      </div>
+<section class="hero">
+  <picture class="hero-bg" aria-hidden="true">
+    <source srcset="/media/hero.webp" type="image/webp">
+    <img src="/media/hero.jpg" alt="" width="1440" height="774" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero-inner wrap">
+    <span class="eyebrow"><?= t('home.hero_eyebrow') ?></span>
+    <h1 class="hero-title">
+      <span><?= t('home.hero_title') ?></span>
+      <span class="hero-accent"><?= t('home.hero_title_accent') ?></span>
+    </h1>
+    <p class="lead"><?= t('home.hero_lead') ?></p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="/kontakt.php"><?= t('common.cta_project') ?></a>
+      <a class="btn btn-ghost" href="/serielle-sanierung.php"><?= t('home.hero_cta2') ?></a>
     </div>
-    <div class="panel-stack" aria-hidden="true">
-      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <div class="badge-row">
+      <?php foreach (ta('home.hero_badges') as $b): ?><span><?= $b ?></span><?php endforeach; ?>
     </div>
   </div>
 </section>

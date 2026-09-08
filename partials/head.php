@@ -18,7 +18,7 @@ $page_title = $page_title ?? t('meta.home.title');
 $page_desc  = $page_desc  ?? t('meta.home.desc');
 $path_only  = rtrim($SITE['url'], '/') . '/' . ($slug === 'index.php' || $slug === '' ? '' : $slug);
 $canonical  = $path_only . ($LANG === $LANG_DEFAULT ? '' : '?lang=' . $LANG);
-$asset_v    = '20260908e'; // bei CSS-Änderungen hochzählen (Cache-Buster)
+$asset_v    = '20260908j'; // bei CSS-Änderungen hochzählen (Cache-Buster)
 ?><!doctype html>
 <html lang="<?= e($LANG) ?>">
 <head>
@@ -44,7 +44,8 @@ $asset_v    = '20260908e'; // bei CSS-Änderungen hochzählen (Cache-Buster)
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=EB+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="preload" as="image" href="/media/hero.webp" type="image/webp">
   <link rel="stylesheet" href="/assets/style.css?v=<?= $asset_v ?>">
 </head>
 <body>

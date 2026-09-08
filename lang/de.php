@@ -24,7 +24,6 @@ return [
   ],
 
   'nav' => [
-    'index.php'              => 'Start',
     'serielle-sanierung.php' => 'Serielle Sanierung',
     'fassadenelemente.php'   => 'Fassadenelemente',
     'ueber-uns.php'          => 'Über EstNor',
@@ -56,11 +55,12 @@ return [
   ],
 
   'home' => [
-    'hero_eyebrow'   => 'Fertigungspartner aus Estland',
-    'hero_title'     => 'Serielle Sanierung beginnt im Werk – nicht auf dem Gerüst.',
+    'hero_eyebrow'    => 'Fertigungspartner aus Estland',
+    'hero_title'      => 'Serielle Sanierung beginnt im Werk.',
+    'hero_title_accent' => 'Nicht auf dem Gerüst.',
     'hero_lead'      => 'EstNor fertigt gedämmte Fassaden- und Dachelemente mit bereits eingebauten Fenstern, Lüftungsführung und fertiger Fassadenoberfläche. Rund 90 % der Fassadenarbeit passiert unter kontrollierten Werksbedingungen – die Montage vor Ort dauert dann Wochen statt Monate.',
     'hero_cta2'      => 'Was ist serielle Sanierung?',
-    'hero_badges'    => ['Gegründet 2000', 'ISO 9001', 'CE-Kennzeichnung · EOTA', 'Produktion in der EU'],
+    'hero_badges'    => ['Seit 2000', 'ISO 9001 · CE · EOTA · Ü-Zeichen', 'Fertigung in der EU'],
 
     'offer_eyebrow'  => 'Das Angebot',
     'offer_title'    => 'Ein Fertigungspartner für die Gebäudehülle',
@@ -199,6 +199,7 @@ return [
     'quality' => [
       'Qualitätsmanagement nach ISO 9001',
       'CE-Kennzeichnung, europäische technische Bewertung (EOTA)',
+      'Ü-Zeichen (Übereinstimmungszeichen) für den Einsatz in Deutschland',
       'Mitglied im estnischen Holzhausverband (Puitmajaliit)',
       'Projektbezogene Nachweise nach deutschen Anforderungen auf Anfrage',
     ],
@@ -236,6 +237,7 @@ return [
     'proof' => [
       'Qualitätsmanagement nach ISO 9001',
       'CE-Kennzeichnung, EOTA',
+      'Ü-Zeichen für den Einsatz in Deutschland',
       'Estnischer Holzhausverband (Puitmajaliit)',
       'Unternehmerverband Kiili, Norwegisch-Estnische Handelskammer',
       'Mehrfach ausgezeichnet beim Wettbewerb „Prefab House of the Year“ (2015–2023)',

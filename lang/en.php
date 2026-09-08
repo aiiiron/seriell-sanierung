@@ -25,7 +25,6 @@ return [
   ],
 
   'nav' => [
-    'index.php'              => 'Home',
     'serielle-sanierung.php' => 'Serial Renovation',
     'fassadenelemente.php'   => 'Facade Elements',
     'ueber-uns.php'          => 'About EstNor',
@@ -57,11 +56,12 @@ return [
   ],
 
   'home' => [
-    'hero_eyebrow'   => 'Manufacturing partner from Estonia',
-    'hero_title'     => 'Serial renovation starts in the factory – not on the scaffolding.',
+    'hero_eyebrow'    => 'Manufacturing partner from Estonia',
+    'hero_title'      => 'Serial renovation starts in the factory.',
+    'hero_title_accent' => 'Not on the scaffolding.',
     'hero_lead'      => 'EstNor manufactures insulated facade and roof elements with windows, ventilation routing and a finished facade surface already built in. Around 90 % of the facade work happens under controlled factory conditions – on-site installation then takes weeks instead of months.',
     'hero_cta2'      => 'What is serial renovation?',
-    'hero_badges'    => ['Founded in 2000', 'ISO 9001', 'CE marking · EOTA', 'Manufactured in the EU'],
+    'hero_badges'    => ['Since 2000', 'ISO 9001 · CE · EOTA · Ü-mark', 'Made in the EU'],
 
     'offer_eyebrow'  => 'What we offer',
     'offer_title'    => 'A manufacturing partner for the building envelope',
@@ -200,6 +200,7 @@ return [
     'quality' => [
       'Quality management to ISO 9001',
       'CE marking, European Technical Assessment (EOTA)',
+      'Ü-mark (declaration of conformity) for use in Germany',
       'Member of the Estonian Woodhouse Association (Puitmajaliit)',
       'Project-specific documentation to German requirements on request',
     ],
@@ -237,6 +238,7 @@ return [
     'proof' => [
       'Quality management to ISO 9001',
       'CE marking, EOTA',
+      'Ü-mark for use in Germany',
       'Estonian Woodhouse Association (Puitmajaliit)',
       'Kiili Entrepreneurs Union, Norwegian-Estonian Chamber of Commerce',
       'Several awards in the "Prefab House of the Year" competition (2015–2023)',
