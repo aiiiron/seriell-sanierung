@@ -1,33 +1,33 @@
-<?php require_once __DIR__ . '/../inc/site.php'; /* falls direkt eingebunden */ ?>
+<?php require_once __DIR__ . '/../inc/site.php'; require_once __DIR__ . '/../inc/i18n.php'; ?>
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="/">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-        <rect width="32" height="32" rx="7" fill="#14352a"/>
-        <g fill="none" stroke="#e0912f" stroke-width="2">
-          <rect x="7" y="7" width="8" height="18" rx="1"/>
-          <rect x="17" y="7" width="8" height="8" rx="1"/>
-          <rect x="17" y="17" width="8" height="8" rx="1"/>
-        </g>
-      </svg>
-      <span class="brand-text">
-        <strong>seriell&#8209;sanierung.de</strong>
-        <span>Fassadenelemente von EstNor</span>
-      </span>
+      <img class="brand-logo" src="/media/estnor-logo-rgb.png" width="505" height="171"
+           alt="EstNor" fetchpriority="high">
+      <span class="brand-caption"><?= e(t('common.brand_caption')) ?></span>
     </a>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-    <label for="nav-toggle" class="nav-burger" aria-label="Menü">
-      <span></span><span></span><span></span>
-    </label>
-
-    <nav class="nav" aria-label="Hauptnavigation">
-      <ul>
-        <?php foreach ($SITE['nav'] as $href => $label): ?>
-          <li><a href="/<?= e($href === 'index.php' ? '' : $href) ?>"<?= nav_active($href, $slug ?? '') ?>><?= e($label) ?></a></li>
+    <div class="bar-right">
+      <div class="lang-switch" role="group" aria-label="<?= e(t('common.lang_aria')) ?>">
+        <?php foreach ($LANGS as $lc => $ln): ?>
+          <a href="<?= e(lang_url($lc)) ?>" hreflang="<?= e($lc) ?>" lang="<?= e($lc) ?>"
+             <?= $lc === $LANG ? 'aria-current="true"' : '' ?>><?= e(strtoupper($lc)) ?></a>
         <?php endforeach; ?>
-      </ul>
-      <a class="btn btn-primary nav-cta" href="/kontakt.php">Anfrage stellen</a>
-    </nav>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-burger" aria-label="<?= e(t('common.menu')) ?>">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="<?= e(t('common.nav_aria')) ?>">
+        <ul>
+          <?php foreach ($SITE['nav'] as $href): ?>
+            <li><a href="/<?= e($href === 'index.php' ? '' : $href) ?>"<?= nav_active($href, $slug ?? '') ?>><?= e(t_nav($href)) ?></a></li>
+          <?php endforeach; ?>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="/kontakt.php"><?= e(t('common.cta_inquiry')) ?></a>
+      </nav>
+    </div>
   </div>
 </header>

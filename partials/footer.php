@@ -3,23 +3,21 @@
   <div class="wrap foot-grid">
     <div class="foot-brand">
       <p class="foot-logo">seriell&#8209;sanierung.de</p>
-      <p>Vorgefertigte Fassaden- und Dachelemente für die serielle Sanierung von
-         Mehrfamilienhäusern. Gefertigt von <?= e($SITE['company']['legal_name']) ?> in Estland,
-         montiert von Partnerbetrieben in Deutschland.</p>
+      <p><?= sprintf(e(t('footer.tagline')), e($SITE['company']['legal_name'])) ?></p>
     </div>
 
     <div>
-      <h2>Themen</h2>
+      <h2><?= e(t('footer.h_topics')) ?></h2>
       <ul>
-        <li><a href="/serielle-sanierung.php">Serielle Sanierung</a></li>
-        <li><a href="/fassadenelemente.php">Fassadenelemente</a></li>
-        <li><a href="/ueber-uns.php">Über EstNor</a></li>
-        <li><a href="/referenzen.php">Referenzen</a></li>
+        <li><a href="/serielle-sanierung.php"><?= e(t_nav('serielle-sanierung.php')) ?></a></li>
+        <li><a href="/fassadenelemente.php"><?= e(t_nav('fassadenelemente.php')) ?></a></li>
+        <li><a href="/ueber-uns.php"><?= e(t_nav('ueber-uns.php')) ?></a></li>
+        <li><a href="/referenzen.php"><?= e(t_nav('referenzen.php')) ?></a></li>
       </ul>
     </div>
 
     <div>
-      <h2>Kontakt</h2>
+      <h2><?= e(t('footer.h_contact')) ?></h2>
       <ul>
         <li><a href="mailto:<?= e($SITE['contact']['email']) ?>"><?= e($SITE['contact']['email']) ?></a></li>
         <li><a href="tel:<?= e($SITE['contact']['phone_href']) ?>"><?= e($SITE['contact']['phone']) ?></a></li>
@@ -29,17 +27,17 @@
     </div>
 
     <div>
-      <h2>Rechtliches</h2>
+      <h2><?= e(t('footer.h_legal')) ?></h2>
       <ul>
-        <li><a href="/impressum.php">Impressum</a></li>
-        <li><a href="/datenschutz.php">Datenschutz</a></li>
+        <li><a href="/impressum.php"><?= e(t('footer.impressum')) ?></a></li>
+        <li><a href="/datenschutz.php"><?= e(t('footer.privacy')) ?></a></li>
         <li><a href="<?= e($SITE['social']['linkedin']) ?>" rel="noopener">LinkedIn</a></li>
       </ul>
     </div>
   </div>
   <div class="wrap foot-bottom">
-    <p>&copy; <?= date('Y') ?> <?= e($SITE['company']['legal_name']) ?>. Alle Rechte vorbehalten.</p>
-    <p>Herstellerinformationen und Kennzahlen: estnor.ee</p>
+    <p>&copy; <?= date('Y') ?> <?= e($SITE['company']['legal_name']) ?>. <?= e(t('footer.rights')) ?></p>
+    <p><?= e(t('footer.source')) ?></p>
   </div>
 </footer>
 

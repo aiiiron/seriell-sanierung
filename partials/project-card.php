@@ -1,9 +1,16 @@
 <?php
 /**
  * partials/project-card.php — erwartet $p (ein Eintrag aus inc/projects.php).
+ * Texte kommen sprachabhängig aus lang/*.php unter 'projects.<key>'.
  * Schematische SVG-Illustration statt Foto, klar als Skizze erkennbar.
  */
-$fig = $p['fig'] ?? 1;
+$fig  = $p['fig'] ?? 1;
+$pk   = 'projects.' . ($p['key'] ?? '');
+$meta = t($pk . '.meta');
+$title = t($pk . '.title');
+$tags  = ta($pk . '.tags');
+$body  = t($pk . '.body');
+$pstats = ta($pk . '.stats');
 ?>
 <article class="project-card">
   <div class="project-figure" aria-hidden="true">
@@ -47,17 +54,17 @@ $fig = $p['fig'] ?? 1;
     <?php endif; ?>
   </div>
   <div class="project-body">
-    <p class="meta"><?= e($p['meta']) ?></p>
-    <h3><?= e($p['title']) ?></h3>
-    <?php if (!empty($p['tags'])): ?>
+    <p class="meta"><?= e($meta) ?></p>
+    <h3><?= e($title) ?></h3>
+    <?php if ($tags): ?>
       <div class="tag-row">
-        <?php foreach ($p['tags'] as $t): ?><span class="tag"><?= e($t) ?></span><?php endforeach; ?>
+        <?php foreach ($tags as $tg): ?><span class="tag"><?= $tg ?></span><?php endforeach; ?>
       </div>
     <?php endif; ?>
-    <p><?= e(preg_replace('/\s+/', ' ', $p['body'])) ?></p>
-    <?php if (!empty($p['stats'])): ?>
+    <p><?= e($body) ?></p>
+    <?php if ($pstats): ?>
       <div class="project-stats">
-        <?php foreach ($p['stats'] as [$v, $l]): ?>
+        <?php foreach ($pstats as [$v, $l]): ?>
           <div><b><?= e($v) ?></b><span><?= e($l) ?></span></div>
         <?php endforeach; ?>
       </div>

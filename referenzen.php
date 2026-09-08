@@ -1,7 +1,8 @@
 <?php
+require_once __DIR__ . '/inc/i18n.php';
 $slug = 'referenzen.php';
-$page_title = 'Referenzen';
-$page_desc = 'Referenzprojekte von EstNor für vorgefertigte Fassaden- und Dachelemente – darunter das estnische KredEx-Pilotprogramm für serielle Sanierung und das Umwelthaus Loodusmaja in Tallinn.';
+$page_title = t('meta.ref.title');
+$page_desc  = t('meta.ref.desc');
 require __DIR__ . '/partials/head.php';
 require __DIR__ . '/inc/projects.php';
 ?>
@@ -9,13 +10,9 @@ require __DIR__ . '/inc/projects.php';
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Referenzen</span>
-      <h1>Projekte mit vorgefertigten Elementen</h1>
-      <p class="lead">
-        Ausgewählte Projekte, in denen EstNor-Elemente zum Einsatz kommen. Die
-        Illustrationen sind Skizzen, keine Projektfotos – echte Fotos werden ergänzt,
-        sobald sie vorliegen.
-      </p>
+      <span class="eyebrow"><?= t('ref.eyebrow') ?></span>
+      <h1><?= t('ref.title') ?></h1>
+      <p class="lead"><?= t('ref.lead') ?></p>
     </div>
 
     <div class="grid cols-3">
@@ -27,21 +24,16 @@ require __DIR__ . '/inc/projects.php';
 <section class="section section--alt">
   <div class="wrap split">
     <div>
-      <span class="eyebrow">Einordnung</span>
-      <h2>Was diese Referenzen zeigen</h2>
-      <p>Die serielle Fassadensanierung im bewohnten Zustand ist bei EstNor keine
-        Ankündigung, sondern laufende Fertigung: standardisierte Elemente,
-        wiederkehrende Gebäudetypen, Montage in Wochen. Für Deutschland geht es jetzt
-        darum, diese Fertigung mit lokalen Partnern auf konkrete Quartiere zu
-        übertragen.</p>
+      <span class="eyebrow"><?= t('ref.meaning_eyebrow') ?></span>
+      <h2><?= t('ref.meaning_title') ?></h2>
+      <p><?= t('ref.meaning_body') ?></p>
     </div>
     <div>
-      <span class="eyebrow">Ihr Projekt</span>
-      <h2>Referenz Nummer eins in Deutschland</h2>
-      <p>Wenn Sie ein serielles Fassadenprojekt planen und einen Fertigungspartner
-        suchen, sprechen wir über Gebäudetypen, Stückzahlen und Zeitplan.</p>
+      <span class="eyebrow"><?= t('ref.your_eyebrow') ?></span>
+      <h2><?= t('ref.your_title') ?></h2>
+      <p><?= t('ref.your_body') ?></p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="/kontakt.php">Projekt anfragen</a>
+        <a class="btn btn-primary" href="/kontakt.php"><?= t('common.cta_project') ?></a>
       </div>
     </div>
   </div>
@@ -50,11 +42,10 @@ require __DIR__ . '/inc/projects.php';
 <section class="section section--dark">
   <div class="wrap cta-band">
     <div>
-      <h2>Mehr Details zu einem Projekt?</h2>
-      <p>Wir stellen auf Anfrage weitere Angaben und – soweit freigegeben –
-        Projektunterlagen zur Verfügung.</p>
+      <h2><?= t('ref.final_title') ?></h2>
+      <p><?= t('ref.final_body') ?></p>
     </div>
-    <a class="btn btn-primary" href="/kontakt.php">Kontakt aufnehmen</a>
+    <a class="btn btn-primary" href="/kontakt.php"><?= t('common.cta_contact') ?></a>
   </div>
 </section>
 

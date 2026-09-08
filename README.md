@@ -33,12 +33,18 @@ saksa/eesti segamini — järgi faili, mida muudad.
 ├── 404.php                  Vealehekülg
 ├── partials/
 │   ├── head.php             <head> + päis; enne require't sea $slug/$page_title/$page_desc
-│   ├── header.php           Logo + navigatsioon
+│   ├── header.php           EstNori logo + tekst + keelelüliti + navigatsioon
 │   ├── footer.php           Jalus + mobiilimenüü-skript + </body>
 │   └── project-card.php     Üks referentskaart (ootab muutujat $p)
 ├── inc/
-│   ├── site.php             KÕIK firma- ja kontaktandmed + abifunktsioonid
-│   └── projects.php         Referentsprojektide massiiv
+│   ├── site.php             Firma- ja kontaktandmed (ainult EstNor OÜ) + abifunktsioonid
+│   ├── i18n.php             Kahe keele tugi: t(), ta(), t_nav(), lang_url()
+│   └── projects.php         Referentsprojektide struktuur (tekstid: lang/*.php)
+├── lang/
+│   ├── de.php               Saksakeelsed tekstid (vaikekeel)
+│   └── en.php               Ingliskeelsed tekstid
+├── media/
+│   └── estnor-logo-rgb.png  EstNori logo (päises)
 ├── assets/
 │   ├── style.css            Üks stiilifail (disainižetoonid + komponendid)
 │   └── favicon.svg
@@ -46,6 +52,17 @@ saksa/eesti segamini — järgi faili, mida muudad.
 ├── robots.txt  ·  sitemap.xml
 └── .github/workflows/deploy.yml   FTP-juurutus pushi peale
 ```
+
+## Keeled (DE / EN)
+
+Kogu tekst on failides `lang/de.php` (saksa, vaikekeel) ja `lang/en.php`
+(inglise). Šablloonid ei sisalda kõva teksti, vaid kutseid `t('võti')` /
+`ta('võti')`. Külastaja valib keele päises oleva **DE / EN** lülitiga; valik
+salvestub küpsisesse (`?lang=en` URL-is on vaja ainult ühe korra).
+
+**Teksti muutmine:** muuda vastavat väärtust `lang/de.php`-s JA `lang/en.php`-s
+(sama võti). **Uus tekstiplokk:** lisa võti mõlemasse faili, siis kasuta
+šabloonis `<?= t('...') ?>`. Kui EN võti puudub, kuvatakse DE tekst (varuvariant).
 
 ---
 

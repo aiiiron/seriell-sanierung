@@ -51,14 +51,14 @@ $SITE = [
         ['90 %',     'Exportanteil (u. a. Norwegen, Schweden, DACH)'],
     ],
 
-    // ── Navigation ───────────────────────────────────────────────────────
+    // ── Navigation (Reihenfolge; Beschriftungen in lang/*.php unter 'nav') ─
     'nav' => [
-        'index.php'               => 'Start',
-        'serielle-sanierung.php'  => 'Serielle Sanierung',
-        'fassadenelemente.php'    => 'Fassadenelemente',
-        'ueber-uns.php'           => 'Über EstNor',
-        'referenzen.php'          => 'Referenzen',
-        'kontakt.php'             => 'Kontakt',
+        'index.php',
+        'serielle-sanierung.php',
+        'fassadenelemente.php',
+        'ueber-uns.php',
+        'referenzen.php',
+        'kontakt.php',
     ],
 ];
 
