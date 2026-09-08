@@ -18,7 +18,7 @@ $page_title = $page_title ?? t('meta.home.title');
 $page_desc  = $page_desc  ?? t('meta.home.desc');
 $path_only  = rtrim($SITE['url'], '/') . '/' . ($slug === 'index.php' || $slug === '' ? '' : $slug);
 $canonical  = $path_only . ($LANG === $LANG_DEFAULT ? '' : '?lang=' . $LANG);
-$asset_v    = '20260908d'; // bei CSS-Änderungen hochzählen (Cache-Buster)
+$asset_v    = '20260908e'; // bei CSS-Änderungen hochzählen (Cache-Buster)
 ?><!doctype html>
 <html lang="<?= e($LANG) ?>">
 <head>

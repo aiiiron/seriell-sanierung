@@ -5,3 +5,6 @@
 
 # logs / local junk
 *.log
+
+# lokale Vorschau-Snapshots, nicht deployen
+_preview/
