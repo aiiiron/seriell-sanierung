@@ -424,6 +424,8 @@ ul { margin: 0 0 1.1em; padding-left: 1.2em; }
 .site-footer { background: var(--spruce-deep); color: #c4d3c9; padding-block: 3.25rem 1.5rem; }
 .site-footer a { color: #c4d3c9; text-decoration: none; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
+/* align-items: stretch (Grid-Standard) hält alle Spalten gleich hoch;
+   die drei Link-Spalten haben je 4 Einträge, damit auch der Inhalt gleich endet */
 .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; }
 @media (max-width: 860px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .foot-grid { grid-template-columns: 1fr; } }

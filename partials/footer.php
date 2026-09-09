@@ -35,6 +35,7 @@
         <li><a href="/impressum.php"><?= e(t('footer.impressum')) ?></a></li>
         <li><a href="/datenschutz.php"><?= e(t('footer.privacy')) ?></a></li>
         <li><a href="<?= e($SITE['social']['linkedin']) ?>" rel="noopener">LinkedIn</a></li>
+        <li><a href="<?= e($SITE['social']['facebook']) ?>" rel="noopener">Facebook</a></li>
       </ul>
     </div>
   </div>
