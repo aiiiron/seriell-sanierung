@@ -33,7 +33,7 @@ return [
   ],
 
   'footer' => [
-    'tagline'   => 'Prefabricated facade and roof elements for the serial renovation of apartment buildings. Manufactured by %s in Estonia, installed by partner companies in Germany.',
+    'tagline'   => 'Prefabricated facade and roof elements for the serial renovation of apartment buildings. Manufactured in Estonia and installed in Germany by %s.',
     'h_topics'  => 'Topics',
     'h_contact' => 'Contact',
     'h_legal'   => 'Legal',

@@ -32,7 +32,7 @@ return [
   ],
 
   'footer' => [
-    'tagline'   => 'Vorgefertigte Fassaden- und Dachelemente für die serielle Sanierung von Mehrfamilienhäusern. Gefertigt von %s in Estland, montiert von Partnerbetrieben in Deutschland.',
+    'tagline'   => 'Vorgefertigte Fassaden- und Dachelemente für die serielle Sanierung von Mehrfamilienhäusern. Gefertigt in Estland und in Deutschland montiert von %s.',
     'h_topics'  => 'Themen',
     'h_contact' => 'Kontakt',
     'h_legal'   => 'Rechtliches',

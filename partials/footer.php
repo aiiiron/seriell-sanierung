@@ -2,7 +2,10 @@
 <footer class="site-footer">
   <div class="wrap foot-grid">
     <div class="foot-brand">
-      <p class="foot-logo">seriell&#8209;sanierung.de</p>
+      <p class="foot-logo">
+        <img src="/media/logo-mono-white-small.png" width="442" height="162" alt="EstNor">
+        <span>seriell&#8209;sanierung.de</span>
+      </p>
       <p><?= sprintf(e(t('footer.tagline')), e($SITE['company']['legal_name'])) ?></p>
     </div>
 
