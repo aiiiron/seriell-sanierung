@@ -428,8 +428,8 @@ ul { margin: 0 0 1.1em; padding-left: 1.2em; }
 @media (max-width: 860px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .foot-grid { grid-template-columns: 1fr; } }
 .foot-brand p { color: #a9bcb0; font-size: .92rem; max-width: 38ch; }
-.foot-logo { display: flex; align-items: center; gap: .6rem; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: .7rem; }
-.foot-logo img { height: 1.85rem; width: auto; display: block; }
+.foot-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: .7rem; }
+.foot-logo img { height: 3.7rem; width: auto; display: block; margin-bottom: .55rem; }
 .site-footer h2 { font-size: .8rem; letter-spacing: .09em; text-transform: uppercase; color: #fff; margin-bottom: .9rem; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; font-size: .92rem; }
 .foot-bottom { margin-top: 2.75rem; padding-top: 1.4rem; border-top: 1px solid rgba(255,255,255,.12); display: flex; gap: 1rem 2rem; flex-wrap: wrap; justify-content: space-between; }
