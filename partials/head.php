@@ -18,7 +18,7 @@ $page_title = $page_title ?? t('meta.home.title');
 $page_desc  = $page_desc  ?? t('meta.home.desc');
 $path_only  = rtrim($SITE['url'], '/') . '/' . ($slug === 'index.php' || $slug === '' ? '' : $slug);
 $canonical  = $path_only . ($LANG === $LANG_DEFAULT ? '' : '?lang=' . $LANG);
-$asset_v    = '20260909d'; // bei CSS-Änderungen hochzählen (Cache-Buster)
+$asset_v    = '20260917a'; // bei CSS-/Icon-Änderungen hochzählen (Cache-Buster, auch für CDN-Cache)
 ?><!doctype html>
 <html lang="<?= e($LANG) ?>">
 <head>
@@ -40,8 +40,8 @@ $asset_v    = '20260909d'; // bei CSS-Änderungen hochzählen (Cache-Buster)
   <meta property="og:locale" content="<?= $LANG === 'de' ? 'de_DE' : 'en_GB' ?>">
   <meta name="theme-color" content="#14352a">
 
-  <link rel="icon" href="/assets/favicon.ico" sizes="32x32">
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" href="/assets/favicon.ico?v=<?= $asset_v ?>" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=<?= $asset_v ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
