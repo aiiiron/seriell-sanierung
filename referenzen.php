@@ -27,6 +27,7 @@ require __DIR__ . '/inc/projects.php';
       <span class="eyebrow"><?= t('ref.meaning_eyebrow') ?></span>
       <h2><?= t('ref.meaning_title') ?></h2>
       <p><?= t('ref.meaning_body') ?></p>
+      <p class="form-note"><a href="https://kredex.ee" rel="noopener">KredEx.ee</a></p>
     </div>
     <div>
       <span class="eyebrow"><?= t('ref.your_eyebrow') ?></span>

@@ -65,11 +65,11 @@ return [
 
     'offer_eyebrow'  => 'What we offer',
     'offer_title'    => 'A manufacturing partner for the building envelope',
-    'offer_lead'     => 'EstNor supplies the prefabricated components. Planning, permits, sales and installation are handled by you or your local partner company in Germany.',
+    'offer_lead'     => 'EstNor supplies the prefabricated components and, on request, covers the complete chain from survey to on-site installation – in Germany together with local partner companies.',
     'offer_cards'    => [
       ['Facade elements', 'Timber-frame elements with insulation, wind and vapour barrier, energy-efficient PVC windows and a pre-fitted cladding panel – made to measure from a 3D survey.'],
       ['Roof elements', 'Prefabricated roof elements including preparation for photovoltaics – produced in the same run as the facade, for a continuous envelope.'],
-      ['From survey to installation', 'On request, EstNor handles building survey, structural design, engineering, factory production, transport and installation support – as a complete package.'],
+      ['From survey to installation', 'EstNor handles building survey, structural design, engineering, factory production, transport and on-site installation – as a complete package from one source.'],
     ],
     'offer_cta'      => 'See how the elements are built',
 
@@ -91,7 +91,7 @@ return [
       ['3D survey', 'A building scan from the ground and by drone captures the existing structure to the millimetre.'],
       ['BIM planning &amp; engineering', 'A BIM model is created from the point cloud – the basis for precisely fitting elements with windows, connection details and ventilation routing.'],
       ['Factory production', 'Around 90 % of the facade work is done weather-independently at the factory in Kiili, with consistent quality.'],
-      ['Transport &amp; installation', 'Delivery to Germany, installation by your team – a building with several stairwells in about 3–4 weeks instead of nearly a year.'],
+      ['Transport &amp; installation', 'Delivery to Germany, on-site installation – a building with several stairwells in about 3–4 weeks instead of nearly a year.'],
     ],
 
     'stats_eyebrow'  => 'Manufacturer',
@@ -149,7 +149,7 @@ return [
     'funding_callout' => '<b>Note:</b> funding details and bonus rates are to be verified before go-live (BEG / KfW, as applicable for the relevant programme year).',
 
     'final_title' => 'Getting started with serial renovation?',
-    'final_body'  => 'EstNor supplies the prefabricated elements – you bring local planning, sales and installation. Let\'s talk about working together.',
+    'final_body'  => 'EstNor covers the complete chain from survey to installation. Let\'s talk about working together on your project in Germany.',
   ],
 
   'fe' => [
@@ -157,14 +157,35 @@ return [
     'title'   => 'The facade element: a finished wall instead of many separate trades',
     'lead'    => 'Each element is a load-bearing timber-frame structure completed to around 90 % in the factory – insulated, with windows, ventilation routing and a finished surface. On site it only has to be set in place and connected.',
 
-    'buildup_title' => 'Element build-up',
+    'prep_eyebrow' => 'Before production',
+    'prep_title'   => 'Surveying and design',
+    'prep_lead'    => 'Every element fits the old facade exactly because it is designed to the building\'s real geometry, not the geometry on the drawings.',
+    'prep_survey_title' => 'Surveying',
+    'prep_survey_items' => [
+      'The existing building is measured by laser scanning – from the ground and by drone',
+      'A 3D model is generated from the point cloud',
+      'Pull-out strength tests of the fixings are carried out on site',
+    ],
+    'prep_arch_title' => 'Architecture',
+    'prep_arch_items' => [
+      'Building information modelling (BIM)',
+      'Colours are chosen: facade, eaves boxes, rainwater system, window and band flashings',
+      'The facade cladding and its divisions are laid out',
+      'Cladding: through-coloured fibre-cement board, horizontal or vertical timber boarding, or any other facade material of your choice',
+    ],
+
+    'buildup_title' => 'Element build-up — inside to outside',
     'buildup' => [
-      'Load-bearing timber-frame structure, digitally engineered from the BIM model',
-      'Insulation (mineral wool) within the element, with minimal thermal bridging',
-      'Wind and vapour barrier, factory-bonded',
-      'Energy-efficient PVC windows, fully installed and adjusted',
-      'Ventilation ducts routed through the element as designed',
-      'Cladding panel / facing pre-fitted – surface finished at the factory',
+      'Mineral wool 50 mm',
+      'Vapour-control membrane (variable SD 0.2–20)',
+      'Mineral wool 200 mm',
+      'Wall frame 195 mm (C24)',
+      'Wind-barrier wool board 13 mm',
+      'Timber battens 28 mm',
+      'Facade board or timber boarding',
+      'Windows',
+      'Exterior window reveals',
+      'Flashings',
     ],
 
     'grade_eyebrow' => 'Degree of prefabrication',
@@ -181,26 +202,27 @@ return [
     'montage_eyebrow' => 'On-site installation',
     'montage_title'   => 'Nine steps to the new envelope',
     'montage_cards'   => [
-      ['1 · 3D scan', 'Capture from the ground and by drone.'],
-      ['2 · BIM model', 'The point cloud becomes a dimensionally accurate model.'],
-      ['3 · Preparation', 'Brackets and base rails on the existing structure.'],
-      ['4 · Corner elements', 'Setting the first elements at the building corners.'],
-      ['5 · Row installation', 'Element by element, row by row.'],
-      ['6 · Full coverage', 'The facade is completely covered with elements.'],
-      ['7 · Ventilation', 'Connecting the ventilation ducts.'],
-      ['8 · Stairwell', 'Installing the stairwell elements.'],
-      ['9 · Completion', 'Joints, rainwater system, roof connection.'],
+      ['1 · Scanning', 'The building is 3D-scanned with special equipment from the ground and by drone, producing a highly detailed point cloud.'],
+      ['2 · BIM model', 'A detailed BIM model is built from the point cloud, showing every deviation of the existing building; the new elements are designed onto it.'],
+      ['3 · Preparation', 'Specially designed, durable brackets and base rails for the elements are installed.'],
+      ['4 · Corner elements', 'Installation starts at a building corner; elements rest on the rails, with corner clamps keeping each one straight.'],
+      ['5 · Row installation', 'A timber base band on the first row gives a straight starting point for the next; installation continues from the corner.'],
+      ['6 · Full coverage', 'Installation continues around the whole building; the elements covering the stairwell go on last.'],
+      ['7 · Ventilation', 'Some ventilation ducts are built into the elements at the factory to spec; where needed, the main contractor fits the new roof ventilation.'],
+      ['8 · Stairwell', 'The stairwell facade elements are installed once the ventilation ducts are fitted and connected.'],
+      ['9 · Completion', 'Joints are finished and the rainwater system and roofing installed, giving the building its complete exterior.'],
     ],
 
     'logistics_eyebrow' => 'Logistics',
     'logistics_title'   => 'From Estonia to Germany – within the EU',
-    'logistics_body'    => 'Production at the factory in Kiili near Tallinn. As an EU member state there are no customs formalities; the routes across the Baltic Sea and overland are well established. Elements are sorted for installation and delivered just in time.',
+    'logistics_body'    => 'Insulation, new energy-efficient PVC windows with their finishes and the facade cladding board are all fitted at the factory in Kiili near Tallinn. Finished elements are packed weather-tight and delivered in installation order. As an EU member state there are no customs formalities; the routes across the Baltic Sea and overland are well established.',
 
     'quality_eyebrow' => 'Quality &amp; certification',
     'quality' => [
       'Quality management to ISO 9001',
       'CE marking, European Technical Assessment (EOTA)',
       'Ü-mark (declaration of conformity) for use in Germany',
+      'The solution meets fire-safety requirements',
       'Member of the Estonian Woodhouse Association (Puitmajaliit)',
       'Project-specific documentation to German requirements on request',
     ],
@@ -218,16 +240,18 @@ return [
     'brings_eyebrow' => 'What EstNor brings',
     'brings_title'   => 'Manufacturing, not advisory services',
     'brings' => [
-      'Digital planning &amp; engineering of prefabricated facade and roof elements',
-      'Series production under factory conditions with consistent quality',
-      'Integration of windows, insulation, ventilation routing and surface within the element',
-      'Building survey, structural design, transport and installation support on request',
-      'Annual output of around 50 houses, or ≈10,000 m² of floor area',
+      'Building survey and pull-out strength testing of fixings',
+      'Structural design (BIM model)',
+      'Factory production of the elements',
+      'Ventilation ducting installed into the elements at the factory',
+      'Transport from the factory to the building site',
+      'Installation of the elements on site',
+      'Preparatory and follow-up work on site',
     ],
 
     'roles_eyebrow' => 'Division of roles in the German market',
     'roles_title'   => 'Clear roles',
-    'roles_p1'      => 'EstNor handles the engineering and factory production of the elements. Partner companies in Germany bring site management, customer relationships, permit planning and installation. This combines manufacturing expertise with local market knowledge – without either side having to build up its own factory capacity.',
+    'roles_p1'      => 'EstNor covers the complete chain from one source – from the building survey through engineering and factory production to on-site installation. In Germany we work with local partner companies for this, who bring market knowledge, customer relationships and permit planning.',
     'roles_p2'      => 'The focus is on standardised apartment buildings of the kind found in many European countries from the decades of industrial housing construction.',
 
     'origin_eyebrow' => 'Market &amp; origin',
@@ -256,11 +280,14 @@ return [
   'ref' => [
     'eyebrow' => 'Projects',
     'title'   => 'Projects using prefabricated elements',
-    'lead'    => 'Selected projects in which EstNor elements are used. The illustrations are sketches, not project photos – real photos will be added as soon as they are available.',
+    'lead'    => 'Twelve apartment buildings in Estonia whose facades EstNor renewed with factory-made elements, as part of the state-run KredEx grant scheme. Each photo shows the facade before and after.',
+    'country' => 'Estonia',
+    'tag'     => 'Serial renovation',
+    'photo_alt' => 'facade before and after',
 
-    'meaning_eyebrow' => 'Context',
-    'meaning_title'   => 'What these projects show',
-    'meaning_body'    => 'For EstNor, serial facade renovation with tenants in place is not an announcement but ongoing production: standardised elements, recurring building types, installation in weeks. For Germany, the task now is to transfer this production to concrete neighbourhoods together with local partners.',
+    'meaning_eyebrow' => 'KredEx pilot programme 2022–2027',
+    'meaning_title'   => 'First and largest manufacturer in the grant scheme',
+    'meaning_body'    => 'The state-run KredEx grant scheme funds the comprehensive renovation of Estonian apartment buildings. In the first pilot project (2022), EstNor secured the production of facade elements for all twelve buildings shown here – built on a timber frame, with mineral-wool insulation, new PVC windows and the facade finish already applied at the factory. EstNor is the first and largest-volume manufacturer in this programme.',
 
     'your_eyebrow' => 'Your project',
     'your_title'   => 'Reference number one in Germany',
@@ -375,29 +402,5 @@ return [
 
     'h7' => '7. Changes',
     's7_p1' => 'We adapt this privacy policy as soon as changes to the website or the legal situation require it. The version published here at the time applies.',
-  ],
-
-  'projects' => [
-    'kredex' => [
-      'title' => 'KredEx pilot programme for serial renovation',
-      'meta'  => 'Estonia · 2022–2027',
-      'tags'  => ['Facade elements', 'Pilot programme', 'While occupied'],
-      'body'  => 'State pilot programme for the factory-based renovation of residential buildings. EstNor was the first participating element manufacturer and supplied the largest volume of facade elements in the programme.',
-      'stats' => [['12', 'apartment buildings'], ['1st', 'participating manufacturer']],
-    ],
-    'loodusmaja' => [
-      'title' => 'Loodusmaja – environmental building, Tallinn',
-      'meta'  => 'Tallinn, Estonia',
-      'tags'  => ['Facade &amp; roof elements', 'Pre-installed windows', 'Timber construction'],
-      'body'  => 'For one of the largest timber buildings in Estonia, EstNor supplies around 8,000 m² of prefabricated facade and roof elements – including factory-installed windows.',
-      'stats' => [['≈8,000 m²', 'element area'], ['Factory', 'window installation']],
-    ],
-    'germany' => [
-      'title' => 'First projects in Germany',
-      'meta'  => 'Germany · in preparation',
-      'tags'  => ['Seeking partners', 'Apartment building', '1950–1979'],
-      'body'  => 'EstNor is expanding its production capacity specifically for the German market and is looking for construction, renovation and housing companies for first serial facade projects. Your project could be shown here.',
-      'stats' => [],
-    ],
   ],
 ];

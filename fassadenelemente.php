@@ -33,6 +33,30 @@ require __DIR__ . '/partials/head.php';
 <section class="section section--alt">
   <div class="wrap">
     <div class="section-head">
+      <span class="eyebrow"><?= t('fe.prep_eyebrow') ?></span>
+      <h2><?= t('fe.prep_title') ?></h2>
+      <p class="lead"><?= t('fe.prep_lead') ?></p>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3><?= t('fe.prep_survey_title') ?></h3>
+        <ul class="check">
+          <?php foreach (ta('fe.prep_survey_items') as $li): ?><li><?= $li ?></li><?php endforeach; ?>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><?= t('fe.prep_arch_title') ?></h3>
+        <ul class="check">
+          <?php foreach (ta('fe.prep_arch_items') as $li): ?><li><?= $li ?></li><?php endforeach; ?>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
       <span class="eyebrow"><?= t('fe.grade_eyebrow') ?></span>
       <h2><?= t('fe.grade_title') ?></h2>
     </div>

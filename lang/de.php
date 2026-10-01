@@ -64,11 +64,11 @@ return [
 
     'offer_eyebrow'  => 'Das Angebot',
     'offer_title'    => 'Ein Fertigungspartner für die Gebäudehülle',
-    'offer_lead'     => 'EstNor liefert die vorgefertigten Bauteile. Planung, Genehmigung, Vertrieb und Montage übernehmen Sie oder Ihr lokaler Partnerbetrieb in Deutschland.',
+    'offer_lead'     => 'EstNor liefert die vorgefertigten Bauteile und übernimmt auf Wunsch die komplette Kette von der Vermessung bis zur Montage vor Ort – in Deutschland gemeinsam mit lokalen Partnerunternehmen.',
     'offer_cards'    => [
       ['Fassadenelemente', 'Holzrahmenelemente mit Dämmung, Wind- und Dampfsperre, energieeffizienten PVC-Fenstern und vormontierter Fassadenplatte – auf Maß nach 3D-Aufmaß.'],
       ['Dachelemente', 'Vorgefertigte Dachelemente inklusive Vorbereitung für Photovoltaik – im selben Fertigungslauf wie die Fassade, für eine durchgängige Hülle.'],
-      ['Von Aufmaß bis Montage', 'Auf Wunsch übernimmt EstNor Gebäudeaufmaß, Statik, Konstruktion, Werksfertigung, Transport und Montagebegleitung – als Gesamtpaket.'],
+      ['Von Aufmaß bis Montage', 'EstNor übernimmt Gebäudeaufmaß, Statik, Konstruktion, Werksfertigung, Transport und Montage vor Ort – als Gesamtpaket aus einer Hand.'],
     ],
     'offer_cta'      => 'Aufbau der Elemente ansehen',
 
@@ -90,7 +90,7 @@ return [
       ['3D-Aufmaß', 'Gebäudescan vom Boden und per Drohne erfasst den Bestand millimetergenau.'],
       ['BIM-Planung &amp; Konstruktion', 'Aus der Punktwolke entsteht das BIM-Modell – Grundlage passgenauer Elemente mit Fenstern, Anschlüssen und Lüftungsführung.'],
       ['Werksfertigung', 'Rund 90 % der Fassadenarbeit erfolgt witterungsunabhängig im Werk in Kiili, mit gleichbleibender Qualität.'],
-      ['Transport &amp; Montage', 'Lieferung nach Deutschland, Montage durch Ihr Team – ein Gebäude mit mehreren Treppenhäusern in rund 3–4 Wochen statt fast einem Jahr.'],
+      ['Transport &amp; Montage', 'Lieferung nach Deutschland, Montage vor Ort – ein Gebäude mit mehreren Treppenhäusern in rund 3–4 Wochen statt fast einem Jahr.'],
     ],
 
     'stats_eyebrow'  => 'Hersteller',
@@ -148,7 +148,7 @@ return [
     'funding_callout' => '<b>Hinweis:</b> Förderdetails und Bonushöhen sind zum Livegang zu verifizieren (BEG / KfW, Stand des jeweiligen Programmjahres).',
 
     'final_title' => 'Sie steigen in die serielle Sanierung ein?',
-    'final_body'  => 'EstNor liefert die vorgefertigten Elemente – Sie bringen lokale Planung, Vertrieb und Montage ein. Sprechen wir über eine Zusammenarbeit.',
+    'final_body'  => 'EstNor deckt die gesamte Kette von der Vermessung bis zur Montage ab. Sprechen wir über eine Zusammenarbeit für Ihr Projekt in Deutschland.',
   ],
 
   'fe' => [
@@ -156,14 +156,35 @@ return [
     'title'   => 'Das Fassadenelement: eine fertige Wand statt vieler Einzelgewerke',
     'lead'    => 'Jedes Element ist eine tragfähige Holzrahmenkonstruktion, die im Werk zu rund 90 % fertiggestellt wird – gedämmt, mit Fenstern, Lüftungsführung und fertiger Oberfläche. Auf der Baustelle wird es nur noch gesetzt und angeschlossen.',
 
-    'buildup_title' => 'Aufbau des Elements',
+    'prep_eyebrow' => 'Vor der Fertigung',
+    'prep_title'   => 'Aufmaß und Planung',
+    'prep_lead'    => 'Jedes Element passt exakt auf die alte Fassade, weil es nach der tatsächlichen Geometrie des Gebäudes geplant wird – nicht nach der auf den Zeichnungen.',
+    'prep_survey_title' => 'Aufmaß',
+    'prep_survey_items' => [
+      'Das Bestandsgebäude wird per Laserscan vermessen – vom Boden aus und per Drohne',
+      'Aus der Punktwolke wird ein 3D-Modell erzeugt',
+      'Auf der Baustelle werden Auszugsversuche der Befestigungsmittel durchgeführt',
+    ],
+    'prep_arch_title' => 'Architektur',
+    'prep_arch_items' => [
+      'Modellbasierte Planung (BIM)',
+      'Farbtöne werden festgelegt: Fassade, Traufkästen, Regenwassersystem, Fenster- und Gurtbleche',
+      'Fassadenbekleidung und ihre Teilung werden festgelegt',
+      'Bekleidung: durchgefärbte Faserzementplatte, horizontale oder vertikale Holzschalung oder jedes andere gewünschte Fassadenmaterial',
+    ],
+
+    'buildup_title' => 'Aufbau des Elements – von innen nach außen',
     'buildup' => [
-      'Tragende Holzrahmenkonstruktion, digital konstruiert nach BIM-Modell',
-      'Dämmung (Mineralwolle) im Element, wärmebrückenarm',
-      'Wind- und Dampfsperre, werkseitig verklebt',
-      'Energieeffiziente PVC-Fenster, fertig eingebaut und justiert',
-      'Lüftungskanäle nach Planung im Element geführt',
-      'Fassadenplatte / Bekleidung vormontiert – Oberfläche ab Werk',
+      'Mineralwolle 50 mm',
+      'Dampfbremsmembran (variabler sd-Wert 0,2–20)',
+      'Mineralwolle 200 mm',
+      'Wandrahmen 195 mm (C24)',
+      'Windsperr-Dämmplatte 13 mm',
+      'Holzlattung 28 mm',
+      'Fassadenplatte oder Holzschalung',
+      'Fenster',
+      'Äußere Fensterlaibungen',
+      'Bleche',
     ],
 
     'grade_eyebrow' => 'Fertigungsgrad',
@@ -180,26 +201,27 @@ return [
     'montage_eyebrow' => 'Montage vor Ort',
     'montage_title'   => 'In neun Schritten zur neuen Hülle',
     'montage_cards'   => [
-      ['1 · 3D-Scan', 'Erfassung vom Boden und per Drohne.'],
-      ['2 · BIM-Modell', 'Punktwolke wird zum maßhaltigen Modell.'],
-      ['3 · Vorbereitung', 'Konsolen und Fußschwellen am Bestand.'],
-      ['4 · Eckelemente', 'Setzen der ersten Elemente an den Gebäudeecken.'],
-      ['5 · Reihenmontage', 'Element für Element, Reihe für Reihe.'],
-      ['6 · Vollflächig', 'Die Fassade ist komplett mit Elementen bedeckt.'],
-      ['7 · Lüftung', 'Anschluss der Lüftungsrohre.'],
-      ['8 · Treppenhaus', 'Montage der Treppenhauselemente.'],
-      ['9 · Abschluss', 'Fugen, Regenwassersystem, Dachanschluss.'],
+      ['1 · Scan', 'Das Gebäude wird mit Spezialgeräten vom Boden und per Drohne 3D-gescannt – Ergebnis ist eine sehr detaillierte Punktwolke.'],
+      ['2 · BIM-Modell', 'Aus der Punktwolke entsteht ein detailliertes BIM-Modell, in dem jede Abweichung des Bestands sichtbar wird; darauf werden die neuen Elemente geplant.'],
+      ['3 · Vorbereitung', 'Speziell konstruierte, belastbare Konsolen und Auflagerhölzer für die Elemente werden montiert.'],
+      ['4 · Eckelemente', 'Montage beginnt an einer Gebäudeecke; die Elemente liegen auf den Auflagerhölzern, Eckklammern stellen sicher, dass jedes Element gerade sitzt.'],
+      ['5 · Reihenmontage', 'Ein hölzerner Auflagergurt auf der ersten Reihe schafft den geraden Ausgangspunkt für die nächste; die Montage läuft von der Ecke aus weiter.'],
+      ['6 · Vollflächig', 'Rund um das ganze Gebäude wird weitermontiert; die Elemente vor dem Treppenhaus kommen zuletzt.'],
+      ['7 · Lüftung', 'Ein Teil der Lüftungsrohre ist bereits im Werk nach Spezifikation eingebaut; bei Bedarf installiert der Generalunternehmer die neue Anlage auf dem Dach.'],
+      ['8 · Treppenhaus', 'Die Fassadenelemente des Treppenhauses werden montiert, nachdem die Lüftungsrohre eingebaut und verbunden sind.'],
+      ['9 · Abschluss', 'Elementstöße werden fertiggestellt, Regenwassersystem und Dacheindeckung montiert – das Gebäude erhält sein vollständiges Äußeres.'],
     ],
 
     'logistics_eyebrow' => 'Logistik',
     'logistics_title'   => 'Aus Estland nach Deutschland – innerhalb der EU',
-    'logistics_body'    => 'Produktion im Werk in Kiili bei Tallinn. Als EU-Mitgliedstaat entfallen Zollformalitäten; die Wege über die Ostsee und auf dem Landweg sind gut erschlossen. Elemente werden montagegerecht sortiert und just-in-time angeliefert.',
+    'logistics_body'    => 'Dämmung, neue energieeffiziente PVC-Fenster samt Anschlüssen und die Fassadenplatte werden vollständig im Werk in Kiili bei Tallinn eingebaut. Die fertigen Elemente werden wetterdicht verpackt und in Montagereihenfolge geliefert. Als EU-Mitgliedstaat entfallen Zollformalitäten; die Wege über die Ostsee und auf dem Landweg sind gut erschlossen.',
 
     'quality_eyebrow' => 'Qualität &amp; Nachweise',
     'quality' => [
       'Qualitätsmanagement nach ISO 9001',
       'CE-Kennzeichnung, europäische technische Bewertung (EOTA)',
       'Ü-Zeichen (Übereinstimmungszeichen) für den Einsatz in Deutschland',
+      'Lösung erfüllt die Brandschutzanforderungen',
       'Mitglied im estnischen Holzhausverband (Puitmajaliit)',
       'Projektbezogene Nachweise nach deutschen Anforderungen auf Anfrage',
     ],
@@ -217,16 +239,18 @@ return [
     'brings_eyebrow' => 'Was EstNor mitbringt',
     'brings_title'   => 'Fertigung, nicht Beratungsware',
     'brings' => [
-      'Digitale Planung &amp; Konstruktion vorgefertigter Fassaden- und Dachelemente',
-      'Serienfertigung unter Werksbedingungen mit gleichbleibender Qualität',
-      'Integration von Fenstern, Dämmung, Lüftungsführung und Oberfläche im Element',
-      'Gebäudeaufmaß, Statik, Transport und Montagebegleitung auf Wunsch',
-      'Jahresausstoß rund 50 Häuser bzw. ~10.000 m² Grundfläche',
+      'Gebäudeaufmaß und Auszugsversuche der Befestigungen',
+      'Tragwerksplanung (BIM-Modell)',
+      'Werksfertigung der Elemente',
+      'Einbau der Lüftungskanäle in die Elemente im Werk',
+      'Transport vom Werk zur Baustelle',
+      'Montage der Elemente auf der Baustelle',
+      'Vor- und Nacharbeiten zur Montage vor Ort',
     ],
 
     'roles_eyebrow' => 'Aufgabenteilung im deutschen Markt',
     'roles_title'   => 'Klare Rollen',
-    'roles_p1'      => 'EstNor übernimmt Konstruktion und werkseitige Fertigung der Elemente. Partnerbetriebe in Deutschland bringen Bauleitung, Kundenbeziehungen, Genehmigungsplanung und Montage ein. So verbindet sich Fertigungskompetenz mit lokaler Marktkenntnis – ohne dass eine Seite eigene Werkskapazität aufbauen muss.',
+    'roles_p1'      => 'EstNor deckt die gesamte Kette aus einer Hand ab – vom Gebäudeaufmaß über Konstruktion und Werksfertigung bis zur Montage vor Ort. In Deutschland arbeiten wir dafür mit lokalen Partnerunternehmen zusammen, die Marktkenntnis, Kundenbeziehungen und Genehmigungsplanung einbringen.',
     'roles_p2'      => 'Der Fokus liegt auf standardisierten Mehrfamilienhäusern, wie sie in vielen europäischen Ländern aus den Jahrzehnten des industriellen Wohnungsbaus existieren.',
 
     'origin_eyebrow' => 'Markt &amp; Herkunft',
@@ -255,11 +279,14 @@ return [
   'ref' => [
     'eyebrow' => 'Referenzen',
     'title'   => 'Projekte mit vorgefertigten Elementen',
-    'lead'    => 'Ausgewählte Projekte, in denen EstNor-Elemente zum Einsatz kommen. Die Illustrationen sind Skizzen, keine Projektfotos – echte Fotos werden ergänzt, sobald sie vorliegen.',
+    'lead'    => 'Zwölf Mehrfamilienhäuser in Estland, deren Fassaden EstNor im Rahmen des staatlichen KredEx-Förderprogramms mit werkseitig gefertigten Elementen erneuert hat. Jedes Foto zeigt die Fassade vorher und nachher.',
+    'country' => 'Estland',
+    'tag'     => 'Serielle Sanierung',
+    'photo_alt' => 'Fassade vorher und nachher',
 
-    'meaning_eyebrow' => 'Einordnung',
-    'meaning_title'   => 'Was diese Referenzen zeigen',
-    'meaning_body'    => 'Die serielle Fassadensanierung im bewohnten Zustand ist bei EstNor keine Ankündigung, sondern laufende Fertigung: standardisierte Elemente, wiederkehrende Gebäudetypen, Montage in Wochen. Für Deutschland geht es jetzt darum, diese Fertigung mit lokalen Partnern auf konkrete Quartiere zu übertragen.',
+    'meaning_eyebrow' => 'KredEx-Pilotprogramm 2022–2027',
+    'meaning_title'   => 'Erster und größter Hersteller im Förderprogramm',
+    'meaning_body'    => 'Das staatliche KredEx-Förderprogramm finanziert die umfassende Sanierung estnischer Mehrfamilienhäuser. Im ersten Pilotprojekt (2022) sicherte sich EstNor die Fertigung der Fassadenelemente für alle zwölf hier gezeigten Gebäude – auf Holzrahmenbasis, mit Mineralwolldämmung, neuen PVC-Fenstern und werkseitig aufgebrachter Fassadenoberfläche. EstNor ist in diesem Programm der erste und volumenmäßig größte Hersteller.',
 
     'your_eyebrow' => 'Ihr Projekt',
     'your_title'   => 'Referenz Nummer eins in Deutschland',
@@ -374,29 +401,5 @@ return [
 
     'h7' => '7. Änderungen',
     's7_p1' => 'Wir passen diese Datenschutzerklärung an, sobald Änderungen der Website oder der Rechtslage dies erfordern. Es gilt die jeweils hier veröffentlichte Fassung.',
-  ],
-
-  'projects' => [
-    'kredex' => [
-      'title' => 'KredEx-Pilotprogramm für serielle Sanierung',
-      'meta'  => 'Estland · 2022–2027',
-      'tags'  => ['Fassadenelemente', 'Pilotprogramm', 'Im bewohnten Zustand'],
-      'body'  => 'Staatliches Pilotprogramm zur werkseitigen Sanierung von Wohngebäuden. EstNor war der erste teilnehmende Elementhersteller und lieferte das größte Volumen an Fassadenelementen im Programm.',
-      'stats' => [['12', 'Mehrfamilienhäuser'], ['1.', 'teilnehmender Hersteller']],
-    ],
-    'loodusmaja' => [
-      'title' => 'Loodusmaja – Umwelthaus Tallinn',
-      'meta'  => 'Tallinn, Estland',
-      'tags'  => ['Fassaden- &amp; Dachelemente', 'Vormontierte Fenster', 'Holzbau'],
-      'body'  => 'Für eines der größten Holzgebäude Estlands liefert EstNor rund 8.000 m² vorgefertigte Fassaden- und Dachelemente – inklusive im Werk eingebauter Fenster.',
-      'stats' => [['~8.000 m²', 'Elementfläche'], ['Werk', 'Fenstereinbau']],
-    ],
-    'germany' => [
-      'title' => 'Erste Projekte in Deutschland',
-      'meta'  => 'Deutschland · in Vorbereitung',
-      'tags'  => ['Partnersuche', 'Mehrfamilienhaus', '1950–1979'],
-      'body'  => 'EstNor baut die Fertigungskapazität gezielt für den deutschen Markt aus und sucht Bau-, Sanierungs- und Wohnungsunternehmen für erste serielle Fassadenprojekte. Ihr Projekt kann hier stehen.',
-      'stats' => [],
-    ],
   ],
 ];

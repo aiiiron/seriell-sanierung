@@ -101,10 +101,10 @@ require __DIR__ . '/partials/head.php';
       <h2><?= t('home.ref_title') ?></h2>
       <p class="lead"><?= t('home.ref_lead') ?></p>
     </div>
-    <div class="grid cols-2">
+    <div class="grid cols-3">
       <?php
       require __DIR__ . '/inc/projects.php';
-      foreach (array_slice($PROJECTS, 0, 2) as $p) {
+      foreach (array_slice($PROJECTS, 0, 3) as $p) {
           include __DIR__ . '/partials/project-card.php';
       }
       ?>
