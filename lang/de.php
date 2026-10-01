@@ -24,8 +24,8 @@ return [
   ],
 
   'nav' => [
-    'serielle-sanierung.php' => 'Serielle Sanierung',
-    'fassadenelemente.php'   => 'Fassadenelemente',
+    'serielle-sanierung.php' => 'Übersicht',
+    'fassadenelemente.php'   => 'Ablauf',
     'ueber-uns.php'          => 'Über EstNor',
     'referenzen.php'         => 'Referenzen',
     'kontakt.php'            => 'Kontakt',
@@ -108,37 +108,60 @@ return [
   ],
 
   'ss' => [
-    'eyebrow' => 'Grundlagen',
-    'title'   => 'Serielle Sanierung: die Gebäudehülle kommt aus dem Werk',
-    'lead'    => 'Serielle Sanierung überträgt das Prinzip der industriellen Vorfertigung auf die energetische Modernisierung des Bestands. Statt Gerüst, Einzelhandwerk und Witterung auf der Baustelle zu koordinieren, werden Fassaden- und Dachelemente digital geplant, im Werk gefertigt und vor Ort in kurzer Zeit montiert.',
+    'crumb'   => 'Start',
+    'label'   => 'Übersicht',
+    'eyebrow' => 'Werksseitige Sanierung',
+    'hero_h1_line1'  => 'Sanierung einer neuen Ära',
+    'hero_h1_accent' => 'mit im Werk gefertigten, gedämmten Elementen.',
+    'lead'      => 'Bei der Fertigung von Fassadenelementen stützt sich EstNor auf umfassendes Fachwissen und jahrzehntelange Erfahrung und bietet beste Kompetenz zur Steigerung der Energieeffizienz von Gebäuden.',
+    'hero_cta2' => 'Sanierte Gebäude ansehen',
+
+    'why_title' => 'Warum werksgefertigte Elemente',
+    'why_items' => [
+      '90 % der Fassadenarbeiten erfolgen im Werk, unter kontrollierten Bedingungen',
+      'Vorgefertigte Elemente steigern die Effizienz der Arbeiten vor Ort',
+      'Die Arbeiten vor Ort kommen ohne Gerüst aus',
+      'Eine für Bewohner sichere und angenehme Sanierungsmethode',
+      'Die Lösung erfüllt die Brandschutzanforderungen',
+    ],
+    'provides_title' => 'Das bietet EstNor',
+    'provides_items' => [
+      'Gebäudevermessung und Auszugsfestigkeitsprüfungen der Befestigungen',
+      'Konstruktive Planung (BIM-Modell)',
+      'Werksseitige Fertigung der Elemente',
+      'Lüftungskanäle bereits im Werk in die Elemente eingebaut',
+      'Transport vom Werk zur Baustelle',
+      'Montage der Elemente sowie Vor- und Nacharbeiten vor Ort',
+    ],
 
     'concept_title' => 'Woher das Konzept stammt',
     'concept_p1'    => 'Die Idee geht auf das niederländische <b>Energiesprong</b>-Prinzip zurück (seit 2013). Ziel ist eine schnelle, standardisierte und bezahlbare Bestandssanierung „in der Breite“ – bis hin zum Netto-Null-Standard im Betrieb. In Deutschland wird der Ansatz über die Bundesförderung für effiziente Gebäude (BEG) und Programme der KfW unterstützt.',
     'concept_p2'    => 'Der entscheidende Hebel ist ein <b>möglichst hoher Vorfertigungsgrad</b>: ganze Fassadenmodule entstehen im Werk und werden fertig zur Baustelle geliefert – mit Dämmung, Fenstern, Lüftungsführung und Oberfläche.',
 
-    'benefits_title' => 'Was das konkret bringt',
-    'benefits' => [
-      'Deutlich kürzere Bauzeit vor Ort – oft im bewohnten Zustand',
-      'Gleichbleibende Qualität durch Fertigung unter Werksbedingungen',
-      'Planbare Kosten dank standardisierter Prozesse und Wiederholung',
-      'Weniger Lärm, Staub und Zugangsaufwand für Bewohner',
-      'Kein Gerüst über Monate, weniger Personal auf der Baustelle',
-    ],
-
     'how_eyebrow' => 'So funktioniert es',
     'how_title'   => 'Vom Gebäudescan zur montierten Fassade',
     'how_steps'   => [
-      ['Digitales Aufmaß', '3D-Scan des Bestandsgebäudes vom Boden und per Drohne.'],
-      ['BIM-Modell', 'Aus der Punktwolke entsteht ein maßhaltiges Gebäudemodell.'],
-      ['Konstruktion &amp; Fertigung', 'Passgenaue Elemente inkl. Fenster, Anschlussdetails und Lüftung; Serienfertigung im Werk.'],
-      ['Montage', 'Eckelement, Reihe für Reihe, dann Lüftung, Treppenhauselemente, Fugen, Regenwasser und Dach.'],
+      ['Scan', 'Das Bestandsgebäude wird vom Boden und per Drohne 3D-gescannt — Ergebnis ist eine detaillierte Punktwolke.'],
+      ['Modellierung', 'Aus der Punktwolke entsteht ein BIM-Modell, auf dessen Grundlage die neuen Fassadenelemente geplant werden.'],
+      ['Vorbereitung &amp; Eckelemente', 'Konsolen und Grundschiene werden montiert, danach die ersten Elemente an den Gebäudeecken.'],
+      ['Montage &amp; Fertigstellung', 'Die Elemente werden Reihe für Reihe montiert, danach Lüftung, Treppenhaus, Regenwassersystem und Dachanschluss.'],
     ],
 
     'target_eyebrow' => 'Typische Zielgebäude',
     'target_title'   => 'Wo serielle Sanierung besonders wirkt',
     'target_body'    => 'Mehrfamilienhäuser der Baujahre 1950–1979 mit standardisierten Grundrissen und hohem Energieverbrauch: Zeilen- und Plattenbauten, Wohnblöcke, Siedlungen mit vielen baugleichen Häusern. Ähnliche Geometrien lassen sich mit wiederkehrenden Elementtypen effizient sanieren – ein ganzes Quartier statt Einzelgebäude.',
 
-    'funding_eyebrow' => 'Förderung in Deutschland',
+    'kredex_eyebrow' => 'KredEx-Sanierungsförderung 2022–2027',
+    'kredex_title'   => 'Ein staatliches Förderprogramm',
+    'kredex_p1'      => 'Das KredEx-Förderprogramm finanziert die umfassende Sanierung von Mehrfamilienhäusern oder den Austausch der Heizungsanlage gegen eine Lösung auf Basis erneuerbarer Energie. Weitere Informationen: KredEx.ee.',
+    'kredex_p2'      => 'Am ersten KredEx-Pilotprojekt (2022) nahm EstNor sehr erfolgreich teil und sicherte sich die Fertigung der Fassadenelemente für 12 Mehrfamilienhäuser — alle auf Holzrahmenbasis, mit Mineralwolldämmung, neuen PVC-Fenstern und bereits im Werk aufgebrachter Fassadenoberfläche. EstNor ist in diesem Programm der erste und volumenmäßig größte Hersteller.',
+    'speed_eyebrow'  => 'Geschwindigkeit, die zählt',
+    'speed_title'    => '3–4 Wochen statt fast einem Jahr',
+    'speed_body'     => 'Während die Dämmung eines fünfgeschossigen Gebäudes mit fünf Treppenhäusern vor Ort mit EPS fast ein Jahr dauern kann, verkleidet unser werksgefertigtes Fassadenelement dieselbe Fassade in nur 3–4 Wochen. Ein Gerüst ist nicht nötig — es würde den Bewohnern die Aussicht nehmen und während der gesamten Sanierung ein Sicherheitsrisiko darstellen.',
+    'speed_callout_label' => 'Ergebnis:',
+    'speed_callout_text'  => 'Alte Mehrfamilienhäuser gewinnen schnell an Energieeffizienz, die Bauzeit verkürzt sich, und die Nutzungsdauer des Gebäudes verlängert sich.',
+
+    'funding_eyebrow' => 'Fördermöglichkeiten in Deutschland',
     'funding' => [
       'BEG-Förderung für die Sanierung zum Effizienzhaus-Standard',
       'Zusätzlicher Bonus für serielle Sanierung innerhalb der BEG',
@@ -152,9 +175,26 @@ return [
   ],
 
   'fe' => [
-    'eyebrow' => 'Das Produkt',
-    'title'   => 'Das Fassadenelement: eine fertige Wand statt vieler Einzelgewerke',
-    'lead'    => 'Jedes Element ist eine tragfähige Holzrahmenkonstruktion, die im Werk zu rund 90 % fertiggestellt wird – gedämmt, mit Fenstern, Lüftungsführung und fertiger Oberfläche. Auf der Baustelle wird es nur noch gesetzt und angeschlossen.',
+    'crumb'   => 'Start',
+    'label'   => 'Ablauf',
+    'eyebrow' => 'Serielle Sanierung',
+    'title'   => 'Der Sanierungsablauf — vom Scan zur fertigen Fassade',
+    'lead'    => 'Die Werksarbeit folgt einem Grundsatz: Je mehr im Werk und je weniger auf der Baustelle geschieht, desto schneller stehen die Fassadenelemente und desto weniger werden die Bewohner gestört. Hier ist der ganze Ablauf, Schritt für Schritt.',
+
+    'scope_eyebrow' => 'Was EstNor leistet',
+    'scope_title'   => 'Die ganze Kette aus einer Hand',
+    'scope_p1' => 'EstNor übernimmt die komplette Fassadenelement-Kette — vom Aufmaß des Bestandsgebäudes bis zur Montage der Elemente vor Ort. 90 % der Fassadenarbeiten erfolgen im Werk unter kontrollierten Bedingungen; auf der Baustelle bleiben nur Montage und Fertigstellung.',
+    'scope_p2' => 'Das Ergebnis: Ein 5-geschossiges Gebäude mit 5 Treppenhäusern erhält in 3–4 Wochen seine werksgefertigte Fassade — ohne Gerüst, bei bewohntem Haus.',
+    'scope_list_h3' => 'EstNor bietet',
+    'scope_items' => [
+      'Gebäudeaufmaß und Auszugsversuche der Befestigungen',
+      'Tragwerksplanung',
+      'Werksfertigung der Elemente',
+      'Einbau der Lüftungskanäle in die Elemente im Werk',
+      'Transport vom Werk zur Baustelle',
+      'Montage der Elemente auf der Baustelle',
+      'Vor- und Nacharbeiten zur Montage auf der Baustelle',
+    ],
 
     'prep_eyebrow' => 'Vor der Fertigung',
     'prep_title'   => 'Aufmaß und Planung',
@@ -174,6 +214,7 @@ return [
     ],
 
     'buildup_title' => 'Aufbau des Elements – von innen nach außen',
+    'diagram_alt'   => 'Schichten eines EstNor-Fassadenelements',
     'buildup' => [
       'Mineralwolle 50 mm',
       'Dampfbremsmembran (variabler sd-Wert 0,2–20)',
@@ -187,6 +228,15 @@ return [
       'Bleche',
     ],
 
+    'factory_eyebrow' => 'Im Werk',
+    'factory_title'   => 'Fertigung, Fenster, Verpackung, Transport',
+    'factory_lead'    => 'Dämmung, neue energieeffiziente PVC-Fenster samt Anschlüssen und die Fassadenplatte werden alle im Werk eingebaut. Die fertigen Elemente werden wetterdicht verpackt und in Montagereihenfolge zur Baustelle geliefert.',
+    'factory_alts' => [
+      'Fertigung der Fassadenelemente im Werk',
+      'Fenster werden im Werk in die Elemente eingebaut',
+      'Ein fertiges Element vor dem Verpacken',
+    ],
+
     'grade_eyebrow' => 'Fertigungsgrad',
     'grade_title'   => 'Warum 90 % im Werk der entscheidende Punkt ist',
     'grade_cards'   => [
@@ -198,8 +248,9 @@ return [
       ['Kurze Bauzeit', 'Ein Gebäude mit mehreren Treppenhäusern in rund 3–4 Wochen statt fast einem Jahr.'],
     ],
 
-    'montage_eyebrow' => 'Montage vor Ort',
-    'montage_title'   => 'In neun Schritten zur neuen Hülle',
+    'montage_eyebrow' => 'Der Sanierungsablauf, vereinfacht',
+    'montage_title'   => 'Neun Schritte zur neuen Fassade',
+    'montage_lead'    => 'So läuft eine Sanierung mit Fassadenelementen ab – vom Scan bis zur letzten Fertigstellung.',
     'montage_cards'   => [
       ['1 · Scan', 'Das Gebäude wird mit Spezialgeräten vom Boden und per Drohne 3D-gescannt – Ergebnis ist eine sehr detaillierte Punktwolke.'],
       ['2 · BIM-Modell', 'Aus der Punktwolke entsteht ein detailliertes BIM-Modell, in dem jede Abweichung des Bestands sichtbar wird; darauf werden die neuen Elemente geplant.'],
@@ -212,9 +263,18 @@ return [
       ['9 · Abschluss', 'Elementstöße werden fertiggestellt, Regenwassersystem und Dacheindeckung montiert – das Gebäude erhält sein vollständiges Äußeres.'],
     ],
 
+    'video_eyebrow' => 'Animation',
+    'video_title'   => 'Der Sanierungsablauf als Animation',
+    'video_lead'    => 'Zwei Minuten: So wird ein Wohngebäude mit werksgefertigten Fassadenelementen saniert — am Beispiel Kooli 5, Sindi.',
+
+    'site_eyebrow' => 'Auf der Baustelle',
+    'site_title'   => 'Montage vor Ort',
+    'site_lead'    => 'Die Elemente werden mit dem Kran direkt vom Lkw an ihren Platz gehoben und an den Konsolen befestigt — ohne Gerüst.',
+    'site_alt'     => 'Montage der Fassadenelemente vor Ort',
+
     'logistics_eyebrow' => 'Logistik',
     'logistics_title'   => 'Aus Estland nach Deutschland – innerhalb der EU',
-    'logistics_body'    => 'Dämmung, neue energieeffiziente PVC-Fenster samt Anschlüssen und die Fassadenplatte werden vollständig im Werk in Kiili bei Tallinn eingebaut. Die fertigen Elemente werden wetterdicht verpackt und in Montagereihenfolge geliefert. Als EU-Mitgliedstaat entfallen Zollformalitäten; die Wege über die Ostsee und auf dem Landweg sind gut erschlossen.',
+    'logistics_body'    => 'Produktion im Werk in Kiili bei Tallinn. Als EU-Mitgliedstaat entfallen Zollformalitäten; die Wege über die Ostsee und auf dem Landweg sind gut erschlossen. Elemente werden montagegerecht sortiert und just-in-time angeliefert.',
 
     'quality_eyebrow' => 'Qualität &amp; Nachweise',
     'quality' => [
@@ -229,6 +289,7 @@ return [
 
     'final_title' => 'Elementaufbau für Ihr Projekt durchsprechen',
     'final_body'  => 'Schicken Sie uns Gebäudetyp, Baujahr und Fassadenfläche – wir schätzen Elementtypen, Fertigungsaufwand und Lieferzeit ein.',
+    'final_secondary' => 'Sanierte Gebäude ansehen',
   ],
 
   'about' => [

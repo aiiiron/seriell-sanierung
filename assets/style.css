@@ -448,6 +448,65 @@ ul { margin: 0 0 1.1em; padding-left: 1.2em; }
   white-space: nowrap;
 }
 
+/* Breadcrumb (Übersicht/Ablauf-Seiten) */
+.breadcrumb { font-size: .82rem; color: var(--ink-soft); margin-bottom: 1.1rem; }
+.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
+.breadcrumb a:hover { color: var(--spruce-deep); text-decoration: underline; }
+.section--dark .breadcrumb, .section--dark .breadcrumb a { color: #a9bcb0; }
+.hero .breadcrumb, .hero .breadcrumb a { color: rgba(27,33,29,.68); }
+
+/* Reiner Text-Hero (Ablauf-Seite, kein Foto) */
+.page-hero { padding-block: clamp(2.75rem, 6vw, 4rem) clamp(1.5rem, 3vw, 2rem); }
+.page-hero .lead { margin-bottom: 0; }
+
+/* Fotoreihe (Im Werk) */
+.photo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.photo-row .photo-card, .site-gallery .photo-card { margin: 0; border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.photo-row .photo-card img { width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+@media (max-width: 760px) { .photo-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .photo-row { grid-template-columns: 1fr; } }
+
+/* Element-Explosionsdiagramm mit nummerierten Markern + Legende */
+.diagram-figure { position: relative; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; background: #fbfaf7; box-shadow: var(--shadow); margin-bottom: 1.75rem; }
+.diagram-figure img { width: 100%; height: auto; display: block; }
+.diagram-marks { position: absolute; inset: 0; }
+.diagram-mark {
+  position: absolute; transform: translate(-50%, -50%);
+  width: 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: var(--spruce); color: #fff; border: 2px solid #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: .78rem;
+  box-shadow: 0 2px 6px rgba(19,52,42,.35);
+}
+.diagram-mark:nth-child(even) { background: var(--ochre); }
+.diagram-legend { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: .9rem 1.2rem; }
+.diagram-legend li { display: flex; align-items: baseline; gap: .55rem; font-size: .88rem; color: var(--ink-soft); }
+.diagram-legend b { font-family: var(--font-display); font-weight: 700; color: var(--spruce-deep); min-width: 1.3rem; }
+@media (max-width: 900px) { .diagram-legend { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .diagram-legend { grid-template-columns: repeat(2, 1fr); } }
+
+/* Neun Prozessschritte mit Foto */
+.process-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem 1.5rem; }
+.process-steps li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; display: flex; flex-direction: column; }
+.process-steps figure { margin: 0; aspect-ratio: 16/9; background: var(--spruce-tint); }
+.process-steps figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.process-steps .process-num { display: block; font-family: var(--font-display); font-weight: 700; color: var(--ochre-deep); font-size: .95rem; margin: 1.1rem 1.25rem .2rem; }
+.process-steps h3 { margin: 0 1.25rem .35em; font-size: 1.05rem; }
+.process-steps p { margin: 0 1.25rem 1.25rem; font-size: .92rem; }
+@media (max-width: 860px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .process-steps { grid-template-columns: 1fr; } }
+
+/* Video */
+.process-video { width: 100%; border-radius: var(--r-lg); overflow: hidden; display: block; box-shadow: var(--shadow); background: #000; }
+
+/* Baustellen-Fotomosaik */
+.photo-mosaic { display: grid; grid-template-columns: repeat(4, 1fr); gap: .85rem; }
+.photo-mosaic a { display: block; border-radius: var(--r-sm); overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--line); }
+.photo-mosaic img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s ease; }
+.photo-mosaic a:hover img { transform: scale(1.05); }
+@media (max-width: 760px) { .photo-mosaic { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 500px) { .photo-mosaic { grid-template-columns: repeat(2, 1fr); } }
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }

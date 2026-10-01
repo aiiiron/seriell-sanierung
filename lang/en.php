@@ -25,10 +25,10 @@ return [
   ],
 
   'nav' => [
-    'serielle-sanierung.php' => 'Serial Renovation',
-    'fassadenelemente.php'   => 'Facade Elements',
+    'serielle-sanierung.php' => 'Overview',
+    'fassadenelemente.php'   => 'Process',
     'ueber-uns.php'          => 'About EstNor',
-    'referenzen.php'         => 'Projects',
+    'referenzen.php'         => 'References',
     'kontakt.php'            => 'Contact',
   ],
 
@@ -109,37 +109,60 @@ return [
   ],
 
   'ss' => [
-    'eyebrow' => 'Fundamentals',
-    'title'   => 'Serial renovation: the building envelope comes from the factory',
-    'lead'    => 'Serial renovation applies the principle of industrial prefabrication to the energy-efficient modernisation of existing buildings. Instead of coordinating scaffolding, individual trades and the weather on site, facade and roof elements are planned digitally, produced in the factory and installed on site in a short time.',
+    'crumb'   => 'Home',
+    'label'   => 'Overview',
+    'eyebrow' => 'Factory reconstruction',
+    'hero_h1_line1'  => 'A new era of reconstruction',
+    'hero_h1_accent' => 'with factory-built insulated elements.',
+    'lead'      => 'In manufacturing facade elements, EstNor draws on extensive know-how and decades of experience, offering the best expertise for raising a building\'s energy efficiency.',
+    'hero_cta2' => 'See renovated buildings',
+
+    'why_title' => 'Why factory-built elements',
+    'why_items' => [
+      '90 % of facade work is carried out in the factory, in a controlled environment',
+      'Prefabricated elements make on-site work far more efficient',
+      'On-site work requires no scaffolding',
+      'A safe, convenient renovation method for residents',
+      'The solution meets fire-safety requirements',
+    ],
+    'provides_title' => 'What EstNor provides',
+    'provides_items' => [
+      'Building survey and pull-out strength testing of fixings',
+      'Structural design (BIM model)',
+      'Factory production of the elements',
+      'Ventilation ducting installed into the elements at the factory',
+      'Transport from the factory to the building site',
+      'Installation of the elements, plus preparatory and follow-up work on site',
+    ],
 
     'concept_title' => 'Where the concept comes from',
     'concept_p1'    => 'The idea goes back to the Dutch <b>Energiesprong</b> principle (since 2013). The goal is fast, standardised and affordable renovation of the existing stock at scale – up to a net-zero standard in operation. In Germany the approach is supported through the Federal Funding for Efficient Buildings (BEG) and KfW programmes.',
     'concept_p2'    => 'The decisive lever is the <b>highest possible degree of prefabrication</b>: entire facade modules are made in the factory and delivered to site ready-built – with insulation, windows, ventilation routing and surface.',
 
-    'benefits_title' => 'What this delivers in practice',
-    'benefits' => [
-      'Much shorter construction time on site – often with tenants in place',
-      'Consistent quality thanks to production under factory conditions',
-      'Predictable costs through standardised processes and repetition',
-      'Less noise, dust and access disruption for residents',
-      'No scaffolding for months, fewer people on site',
-    ],
-
     'how_eyebrow' => 'How it works',
     'how_title'   => 'From building scan to installed facade',
     'how_steps'   => [
-      ['Digital survey', '3D scan of the existing building from the ground and by drone.'],
-      ['BIM model', 'A dimensionally accurate building model is created from the point cloud.'],
-      ['Engineering &amp; production', 'Precisely fitting elements including windows, connection details and ventilation; series production in the factory.'],
-      ['Installation', 'Corner element, row by row, then ventilation, stairwell elements, joints, rainwater and roof.'],
+      ['Scanning', 'The existing building is 3D-scanned from the ground and by drone — producing a detailed point cloud.'],
+      ['Modelling', 'A BIM model is built from the point cloud, on which the new facade elements are designed.'],
+      ['Preparation &amp; corner elements', 'Brackets and a base rail are installed, then the first elements go up at the building\'s corners.'],
+      ['Installation &amp; finishing', 'Elements are installed row by row, then ventilation, the stairwell, the rainwater system and the roof junction.'],
     ],
 
     'target_eyebrow' => 'Typical target buildings',
     'target_title'   => 'Where serial renovation works best',
     'target_body'    => 'Apartment buildings from 1950–1979 with standardised floor plans and high energy consumption: linear blocks and large-panel buildings, residential blocks, estates with many identical houses. Similar geometries can be renovated efficiently with recurring element types – a whole neighbourhood rather than a single building.',
 
-    'funding_eyebrow' => 'Funding in Germany',
+    'kredex_eyebrow' => 'KredEx reconstruction grant 2022–2027',
+    'kredex_title'   => 'A state funding scheme',
+    'kredex_p1'      => 'The KredEx grant scheme funds the comprehensive reconstruction of apartment buildings or the replacement of heating systems with a renewable-energy solution. More information: KredEx.ee.',
+    'kredex_p2'      => 'EstNor took part very successfully in the first KredEx pilot project (2022), securing the production of facade elements for 12 apartment buildings — all built on a timber frame, with mineral wool insulation, new PVC windows and the facade finish already applied at the factory. EstNor is the first and largest-volume manufacturer in this programme.',
+    'speed_eyebrow'  => 'Speed that matters',
+    'speed_title'    => '3–4 weeks, not almost a year',
+    'speed_body'     => 'While insulating a 5-storey, 5-stairwell building on site with expanded polystyrene can take almost a year, our factory-built facade elements cover the same building\'s facade in just 3–4 weeks. No scaffolding is needed — it would block residents\' view from their windows and pose a safety risk for the whole renovation.',
+    'speed_callout_label' => 'Result:',
+    'speed_callout_text'  => 'old apartment buildings gain energy efficiency quickly, construction time shortens, and the building\'s service life is extended.',
+
+    'funding_eyebrow' => 'Funding options in Germany',
     'funding' => [
       'BEG funding for renovation to Efficiency House standard',
       'Additional bonus for serial renovation within the BEG',
@@ -153,9 +176,26 @@ return [
   ],
 
   'fe' => [
-    'eyebrow' => 'The product',
-    'title'   => 'The facade element: a finished wall instead of many separate trades',
-    'lead'    => 'Each element is a load-bearing timber-frame structure completed to around 90 % in the factory – insulated, with windows, ventilation routing and a finished surface. On site it only has to be set in place and connected.',
+    'crumb'   => 'Home',
+    'label'   => 'Process',
+    'eyebrow' => 'Serial renovation',
+    'title'   => 'The renovation process — from scan to finished facade',
+    'lead'    => 'The factory work is planned on one principle: the more is done in the factory and the less on site, the faster the facade elements go up and the less the residents are disturbed. Here is the whole process, step by step.',
+
+    'scope_eyebrow' => 'What EstNor does',
+    'scope_title'   => 'The whole chain from one manufacturer',
+    'scope_p1' => 'EstNor takes on the entire facade-element chain — from surveying the existing building to installing the elements on site. 90% of the facade work is done in the factory, in a controlled environment; only installation and finishing remain on site.',
+    'scope_p2' => 'The result: a 5-storey, 5-stairwell building is clad with factory-made elements in 3–4 weeks, with no scaffolding and the residents at home.',
+    'scope_list_h3' => 'EstNor provides',
+    'scope_items' => [
+      'Building survey and pull-out strength testing of fixings',
+      'Structural design',
+      'Factory production of the elements',
+      'Ventilation ducting installed into the elements at the factory',
+      'Transport from the factory to the building site',
+      'Installation of the elements on site',
+      'Preparatory and follow-up work on site',
+    ],
 
     'prep_eyebrow' => 'Before production',
     'prep_title'   => 'Surveying and design',
@@ -175,6 +215,7 @@ return [
     ],
 
     'buildup_title' => 'Element build-up — inside to outside',
+    'diagram_alt'   => 'Layers of an EstNor facade element',
     'buildup' => [
       'Mineral wool 50 mm',
       'Vapour-control membrane (variable SD 0.2–20)',
@@ -188,6 +229,15 @@ return [
       'Flashings',
     ],
 
+    'factory_eyebrow' => 'In the factory',
+    'factory_title'   => 'Production, windows, packing, transport',
+    'factory_lead'    => 'Insulation, new energy-efficient PVC windows with their finishes and the facade cladding board are all fitted in the factory. Finished elements are packed weather-tight and delivered to site in installation order.',
+    'factory_alts' => [
+      'Facade element production in the factory',
+      'Windows are installed into the elements at the factory',
+      'A finished element before packing',
+    ],
+
     'grade_eyebrow' => 'Degree of prefabrication',
     'grade_title'   => 'Why 90 % in the factory is the decisive point',
     'grade_cards'   => [
@@ -199,8 +249,9 @@ return [
       ['Short construction time', 'A building with several stairwells in about 3–4 weeks instead of nearly a year.'],
     ],
 
-    'montage_eyebrow' => 'On-site installation',
-    'montage_title'   => 'Nine steps to the new envelope',
+    'montage_eyebrow' => 'The renovation process, simplified',
+    'montage_title'   => 'Nine steps to the new facade',
+    'montage_lead'    => 'This is how a facade-element renovation runs, from scanning to the final finishing.',
     'montage_cards'   => [
       ['1 · Scanning', 'The building is 3D-scanned with special equipment from the ground and by drone, producing a highly detailed point cloud.'],
       ['2 · BIM model', 'A detailed BIM model is built from the point cloud, showing every deviation of the existing building; the new elements are designed onto it.'],
@@ -213,9 +264,18 @@ return [
       ['9 · Completion', 'Joints are finished and the rainwater system and roofing installed, giving the building its complete exterior.'],
     ],
 
+    'video_eyebrow' => 'Animation',
+    'video_title'   => 'Watch the renovation process',
+    'video_lead'    => 'Two minutes on how an apartment building is renovated with factory-made facade elements — the Kooli 5, Sindi project.',
+
+    'site_eyebrow' => 'On site',
+    'site_title'   => 'Installation on site',
+    'site_lead'    => 'Elements are craned straight off the lorry into place and fixed to the brackets — no scaffolding needed.',
+    'site_alt'     => 'Facade element installation on site',
+
     'logistics_eyebrow' => 'Logistics',
     'logistics_title'   => 'From Estonia to Germany – within the EU',
-    'logistics_body'    => 'Insulation, new energy-efficient PVC windows with their finishes and the facade cladding board are all fitted at the factory in Kiili near Tallinn. Finished elements are packed weather-tight and delivered in installation order. As an EU member state there are no customs formalities; the routes across the Baltic Sea and overland are well established.',
+    'logistics_body'    => 'Production at the factory in Kiili near Tallinn. As an EU member state there are no customs formalities; the routes across the Baltic Sea and overland are well established. Elements are sorted for installation and delivered just in time.',
 
     'quality_eyebrow' => 'Quality &amp; certification',
     'quality' => [
@@ -230,6 +290,7 @@ return [
 
     'final_title' => 'Discuss the element build-up for your project',
     'final_body'  => 'Send us the building type, year of construction and facade area – we will estimate element types, production effort and delivery time.',
+    'final_secondary' => 'See renovated buildings',
   ],
 
   'about' => [
